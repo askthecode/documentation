@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://askthecode.dsomok.online/sitemap.xml.gz
