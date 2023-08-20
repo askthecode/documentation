@@ -1,6 +1,7 @@
 ---
 label: "What is AskTheCode?"
 icon: home
+order: 1000
 ---
 
 # What is AskTheCode?

@@ -1,3 +1,4 @@
 title: Usage
 icon: book
-expanded: true
+expanded: false
+order: 100
