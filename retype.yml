@@ -1,6 +1,6 @@
 input: docs
 output: docs-ui
-url: https://askthecode.dsomok.online
+url: https://github.com/askthecode/askthecode.github.io
 
 branding:
   title: AskTheCode
@@ -16,7 +16,7 @@ generator:
 
 links:
 - text: Github
-  link: https://github.com/dsomok/askthecode
+  link: https://github.com/askthecode/askthecode.github.io
   icon: mark-github
   
 footer:
