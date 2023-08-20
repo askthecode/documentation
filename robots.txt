@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://github.com/askthecode/askthecode.github.io/sitemap.xml.gz
+Sitemap: https://askthecode.github.io/sitemap.xml.gz
