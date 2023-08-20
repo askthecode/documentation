@@ -1,0 +1,23 @@
+input: docs
+output: docs-ui
+url: https://askthecode.dsomok.online
+
+branding:
+  title: AskTheCode
+  label: Docs
+  logo: /resources/logo.png
+  logoAlign: left
+
+editor:
+  enabled: false
+
+generator:
+  paths: root
+
+links:
+- text: Github
+  link: https://github.com/dsomok/askthecode
+  icon: mark-github
+  
+footer:
+  copyright: "&copy; Copyright [AskTheCode](https://dsomok.online/). All rights reserved."
