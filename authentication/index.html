@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.2.0.746412716085">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.3.0.747065426498">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 3.2.0">
+    <meta name="generator" content="Retype 3.3.0">
 
     <!-- Primary Meta Tags -->
     <title>Authentication in AskTheCode Plugin</title>
@@ -32,11 +32,11 @@
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=3.2.0.746412716085" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=3.3.0.747065426498" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=3.2.0.746412716085" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="/resources/js/retype.js?v=3.2.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.2.0.746412716085" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=3.3.0.747065426498" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/retype.js?v=3.3.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.3.0.747065426498" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -182,7 +182,6 @@
                             <div class="docs-markdown" id="docs-content">
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="docs-sidebar-right-toggle"></div>
-                
                                 <!-- Page content  -->
 <doc-anchor-target id="authentication-in-askthecode-plugin" class="break-words">
     <h1>
@@ -230,6 +229,23 @@
 </figure>
 </p>
 <p>On this page, you can press the &quot;Change account&quot; link, and you&#x27;ll be redirected to the main Login page. It&#x27;s important to note that GitHub caches the account you have previously used, so you might need to clear cookies for the github.com domain to see the prompt again.</p>
+<doc-anchor-target id="troubleshooting">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#troubleshooting">#</doc-anchor-trigger>
+        <span>Troubleshooting</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="unable-to-retrieve-data-from-private-repository">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#unable-to-retrieve-data-from-private-repository">#</doc-anchor-trigger>
+        <span>Unable to Retrieve Data from Private Repository</span>
+    </h3>
+</doc-anchor-target>
+<p>If you encounter an error when trying to retrieve data from your private repository, the issue might be related to the following error message:</p>
+<blockquote>
+<p>Although you appear to have the correct authorization credentials, the <code v-pre>&lt;YOUR ORGANIZATION NAME HERE&gt;</code> organization has enabled OAuth App access restrictions, meaning that data access to third-parties is limited. For more information on these restrictions, including how to enable this app, visit <a href="https://docs.github.com/articles/restricting-access-to-your-organization-s-data/">here</a>.</p>
+</blockquote>
+<p>To resolve this issue, ensure that you have approved the AskTheCode OAuth app within your organization. To see how to approve the app, consult the <a href="https://docs.github.com/en/organizations/managing-oauth-access-to-your-organizations-data/approving-oauth-apps-for-your-organization">Approving OAuth apps for your organization</a> documentation.</p>
 
                                 
                                 <!-- Required only on API pages -->
