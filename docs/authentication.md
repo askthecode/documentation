@@ -34,3 +34,12 @@ To change the authentication method, you indeed need to reinstall the plugin. Wh
 
 On this page, you can press the "Change account" link, and you'll be redirected to the main Login page. It's important to note that GitHub caches the account you have previously used, so you might need to clear cookies for the github.com domain to see the prompt again.
 
+## Troubleshooting
+
+### Unable to Retrieve Data from Private Repository
+
+If you encounter an error when trying to retrieve data from your private repository, the issue might be related to the following error message:
+
+> Although you appear to have the correct authorization credentials, the `<YOUR ORGANIZATION NAME HERE>` organization has enabled OAuth App access restrictions, meaning that data access to third-parties is limited. For more information on these restrictions, including how to enable this app, visit [here](https://docs.github.com/articles/restricting-access-to-your-organization-s-data/).
+
+To resolve this issue, ensure that you have approved the AskTheCode OAuth app within your organization. To see how to approve the app, consult the [Approving OAuth apps for your organization](https://docs.github.com/en/organizations/managing-oauth-access-to-your-organizations-data/approving-oauth-apps-for-your-organization) documentation.
