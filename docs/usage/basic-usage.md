@@ -1,5 +1,6 @@
 ---
 label: Basic Usage
+icon: "file"
 order: 100
 ---
 
@@ -60,3 +61,10 @@ However, with the AskTheCode plugin, ChatGPT can directly fetch and analyze the 
 - Be specific in your questions to get more accurate and relevant answers.
 - Familiarize yourself with the repository's structure to ask more targeted questions.
 
+---
+
+## Constraints
+
+- **File Size Limit:** The maximum file size supported by AskTheCode is **95,000** characters long. This limit is due to the current restrictions of ChatGPT for the maximum plugin response size.
+  
+- **Large Files:** Issues can occur with very large files due to the limits of the ChatGPT context size. It's recommended to be cautious when analyzing large files.

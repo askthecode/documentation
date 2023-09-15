@@ -1,5 +1,6 @@
 ---
 label: Step-by-Step Prompting
+icon: "file"
 order: 90
 ---
 
