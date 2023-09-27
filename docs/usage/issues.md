@@ -1,14 +1,10 @@
 ---
-label: Github Issues (beta)
-icon: file
-order: 80
+label: Github Issues
+icon: issue-opened
+order: 70
 ---
 
 # Github Issues
-
-!!!warning Beta Feature
-The **Github Issues** functionality described in this document is **currently in beta**. Please be aware that there might be some unexpected behaviors.
-!!!
 
 ---
 
@@ -40,6 +36,7 @@ ChatGPT further delves into this repository, providing the user with a comprehen
 The Comments Posting feature allows users to interact with Github issues directly from ChatGPT. Users can request ChatGPT to compose a comment to post to the issue, either based on a previous feature analysis or from scratch. Rest assured, ChatGPT will never post a comment without confirming it with you first and asking for your approval. This feature enhances collaboration by allowing users to make their voice heard without leaving the ChatGPT environment.
 
 #### Sample
+
 **Full Sample URL**: [ChatGPT Sample](https://chat.openai.com/share/d18e2b5e-2299-41ce-92dc-8c94e2d102c3)
 
 In this sample, the user requests ChatGPT to analyze an issue. For demonstration purposes, a test issue inside a private repository is used to avoid unintended interactions with real issues. ChatGPT proposes an initial version of the comment based on the analysis. The user, after reviewing the comment, can provide feedback and request changes to better align with their intent.

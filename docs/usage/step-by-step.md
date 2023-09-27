@@ -1,7 +1,7 @@
 ---
 label: Step-by-Step Prompting
-icon: "file"
-order: 90
+icon: number
+order: 80
 ---
 
 # Step-by-Step Prompting

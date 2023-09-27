@@ -1,7 +1,7 @@
 ---
 label: Pull Requests
 icon: ":construction:"
-order: 70
+order: 50
 ---
 
 # Pull Requests

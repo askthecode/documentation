@@ -19,7 +19,13 @@ In the Plugin Store, search for the "AskTheCode" plugin.
 **3. Install the Plugin**  
 Click on the "Install" button to add the AskTheCode plugin to your ChatGPT.
 
-**4. GitHub Authentication** [!badge variant="warning" icon=":construction_worker:" text="In Development"]  
-After installation, you'll be prompted to log in with your GitHub account. Complete the authentication process to link your GitHub account with AskTheCode.
+**4. Login to AskTheCode**
 
-Congratulations! You're now set up to use the AskTheCode plugin with ChatGPT.
+After installing the plugin, the next  step is to authenticate. Currently two options are available:
+
+- **Passwordless Login via Email**: Opt for this if you wish to quickly explore the AskTheCode plugin without setting a password. Ideal for newcomers wanting a quick dive into the plugin's features. Note: Best used for exploration only.
+
+- **GitHub OAuth Authentication**: For a comprehensive experience, authenticate using your GitHub account. This grants access to additional features, like querying private repositories.
+
+For an in-depth understanding of authentication methods and account management, check out the [Authentication documentation](../authentication.md).
+
