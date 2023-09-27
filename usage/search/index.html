@@ -9,26 +9,26 @@
     <meta name="generator" content="Retype 3.5.0">
 
     <!-- Primary Meta Tags -->
-    <title>Step-by-Step Prompting</title>
-    <meta name="title" content="Step-by-Step Prompting">
-    <meta name="description" content="The screenshots provided in this guide are based on an older version of the AskTheCode plugin.">
+    <title>Search</title>
+    <meta name="title" content="Search">
+    <meta name="description" content="The Search functionality described in this document is currently in beta. Please be aware that there might be some unexpected behaviors.">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://askthecode.github.io/usage/step-by-step/">
+    <link rel="canonical" href="https://askthecode.github.io/usage/search/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://askthecode.github.io/usage/step-by-step/">
-    <meta property="og:title" content="Step-by-Step Prompting">
-    <meta property="og:description" content="The screenshots provided in this guide are based on an older version of the AskTheCode plugin.">
-    <meta property="og:image" content="https://askthecode.github.io/resources/usage/step-by-step/step2.png">
+    <meta property="og:url" content="https://askthecode.github.io/usage/search/">
+    <meta property="og:title" content="Search">
+    <meta property="og:description" content="The Search functionality described in this document is currently in beta. Please be aware that there might be some unexpected behaviors.">
+    <meta property="og:image" content="https://askthecode.github.io/resources/usage/search/sample.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://askthecode.github.io/usage/step-by-step/">
-    <meta property="twitter:title" content="Step-by-Step Prompting">
-    <meta property="twitter:description" content="The screenshots provided in this guide are based on an older version of the AskTheCode plugin.">
-    <meta property="twitter:image" content="https://askthecode.github.io/resources/usage/step-by-step/step2.png">
+    <meta property="twitter:url" content="https://askthecode.github.io/usage/search/">
+    <meta property="twitter:title" content="Search">
+    <meta property="twitter:description" content="The Search functionality described in this document is currently in beta. Please be aware that there might be some unexpected behaviors.">
+    <meta property="twitter:image" content="https://askthecode.github.io/resources/usage/search/sample.png">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
@@ -37,7 +37,6 @@
     <script data-cfasync="false" src="/resources/js/config.js?v=3.5.0.749156092625" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
     <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.5.0.749156092625" data-turbo-eval="false" defer></script>
-    <script id="mermaid-js" data-cfasync="false" src="/resources/js/mermaid.js?v=3.5.0" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -204,10 +203,10 @@
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="docs-sidebar-right-toggle"></div>
                                 <!-- Page content  -->
-<doc-anchor-target id="step-by-step-prompting" class="break-words">
+<doc-anchor-target id="search" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#step-by-step-prompting">#</doc-anchor-trigger>
-        <span>Step-by-Step Prompting</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#search">#</doc-anchor-trigger>
+        <span>Search</span>
     </h1>
 </doc-anchor-target>
 <div class="flex mb-6">
@@ -222,134 +221,57 @@
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-            <h5>Warning</h5>
-<p>The screenshots provided in this guide are based on an older version of the AskTheCode plugin. The actual response from the plugin might differ (and hopefully be better) in the latest versions.</p>
+            <h5>Beta Feature</h5>
+<p>The <strong>Search</strong> functionality described in this document is <strong>currently in beta</strong>. Please be aware that there might be some unexpected behaviors.</p>
         </div>
     </div>
 </div>
-<p>In this guide, we&#x27;ll showcase the power of specifying steps for the AskTheCode plugin. By providing a structured prompt, you can guide the plugin to analyze code in a more focused manner, ensuring you get the insights you need.</p>
-<doc-anchor-target id="prerequisites">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#prerequisites">#</doc-anchor-trigger>
-        <span>Prerequisites</span>
-    </h2>
+<hr>
+<doc-anchor-target id="overview">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#overview">#</doc-anchor-trigger>
+        <span>Overview</span>
+    </h3>
+</doc-anchor-target>
+<p>The Github Repository Search functionality is a feature designed to enhance interactions with Github repositories. By leveraging the Github Search feature, it provides more precise results when users specify particular entities such as a class, method, file etc. Unlike the base version of the plugin, which returns the entire repository structure to ChatGPT, this feature narrows down the results based on user input, ensuring more relevant and accurate responses.</p>
+<doc-anchor-target id="why-its-useful">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#why-its-useful">#</doc-anchor-trigger>
+        <span>Why It&#x27;s Useful</span>
+    </h3>
 </doc-anchor-target>
 <ul>
-<li>Access to the eShopOnWeb repository: <a href="https://github.com/dotnet-architecture/eShopOnWeb">https://github.com/dotnet-architecture/eShopOnWeb</a></li>
-<li>AskTheCode plugin installed</li>
+<li><strong>Enhanced Precision</strong>: By specifying entities like files, classes, or methods, users can get directly relevant results, bypassing unrelated content.</li>
+<li><strong>Overcome Base Limitations</strong>: The Search feature addresses the <a href="/usage/basic-usage/#constraints">Repository Structure Limit constraint</a> of the base functionality, offering a more refined search experience.</li>
+<li><strong>Quick Access</strong>: Users can swiftly navigate to the exact sections of a repository they&#x27;re interested in.</li>
+<li><strong>Optimized for Large Repositories</strong>: Especially useful for extensive repositories where the base functionality might be overwhelmed.</li>
 </ul>
-<doc-anchor-target id="step-1-crafting-the-prompt-for-askthecode-plugin">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#step-1-crafting-the-prompt-for-askthecode-plugin">#</doc-anchor-trigger>
-        <span>Step 1: Crafting the Prompt for AskTheCode Plugin</span>
-    </h2>
+<doc-anchor-target id="sample-net-runtime-repository-analysis">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#sample-net-runtime-repository-analysis">#</doc-anchor-trigger>
+        <span>Sample: .NET Runtime Repository Analysis</span>
+    </h3>
 </doc-anchor-target>
-<p>The first step is to provide a clear and structured prompt to the AskTheCode plugin. This prompt acts as a set of instructions, guiding the plugin on what to analyze and how.</p>
-<p><strong>Input the following prompt:</strong></p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<div class="codeblock-title">plaintext</div>
-<pre class="language-none"><code v-pre class="language-none">You are a technical documentation writer for the eShopOnWeb repository. Your task is to provide a clear and detailed description of the full handling flow for the endpoint 'GET api/catalog-items' in the given GitHub repository: 
-https://github.com/dotnet-architecture/eShopOnWeb
-
-Follow these steps:
-
-1. Locate the file that handles the specified route in the repository.
-2. Analyze the code of the handler to understand its functionality.
-3. Fetch the code of all dependencies related to the route handler and data retrieval logic.
-4. Analyze the dependencies, including their code and further dependencies if needed.
-5. Describe the main components involved in handling the 'GET api/catalog-items' endpoint and explain their interaction.
-
-Ensure your description includes any abstract classes or interface implementations as well as explanations of any external library usage. 
-Make sure to provide a structured and easy-to-understand response that demonstrates a deep understanding of the codebase.</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="step-2-plugins-search-for-the-route-handler">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#step-2-plugins-search-for-the-route-handler">#</doc-anchor-trigger>
-        <span>Step 2: Plugin&#x27;s Search for the Route Handler</span>
-    </h2>
-</doc-anchor-target>
-<p>Upon receiving the prompt, AskTheCode will begin its search for the file handling the &#x27;GET api/catalog-items&#x27; route.</p>
+<p><strong>Full Sample URL</strong>: <a href="https://chat.openai.com/share/e94cbb96-9aee-4e99-9b71-60e7ab1b0dab">Proposal for Skipping Visibility Checks</a></p>
+<p>In this sample, we use the plugin to analyze the proposal in the .NET runtime repository. This repository is enormously large and greatly exceeds the <a href="/usage/basic-usage/#constraints">repository size constraints</a>.</p>
+<p>Steps in the sample:</p>
+<ol>
+<li>First, we use the <a href="/usage/issues/">Issues</a> feature to analyze the proposal description and comments.</li>
+<li>We try to find the details about the attribute mentioned in the proposal.</li>
+<li>The continuation of the conversation is omitted, but the user could use the plugin to continue the analysis.</li>
+</ol>
 <p><figure class="content-center">
-    <img src="/resources/usage/step-by-step/step2.png" alt="">
+    <img src="/resources/usage/search/sample.png" alt="">
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
-<doc-anchor-target id="step-3-plugin-identifying-dependencies">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#step-3-plugin-identifying-dependencies">#</doc-anchor-trigger>
-        <span>Step 3: Plugin Identifying Dependencies</span>
-    </h2>
-</doc-anchor-target>
-<p>The plugin will then identify and fetch the dependencies related to the route handler. This is based on the instructions provided in the prompt.</p>
-<p><figure class="content-center">
-    <img src="/resources/usage/step-by-step/step3.png" alt="">
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
-<doc-anchor-target id="step-4-plugins-dependency-analysis">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#step-4-plugins-dependency-analysis">#</doc-anchor-trigger>
-        <span>Step 4: Plugin&#x27;s Dependency Analysis</span>
-    </h2>
-</doc-anchor-target>
-<p>AskTheCode will analyze the dependencies, diving deep into their code, understanding their functionality, and identifying any further dependencies.</p>
-<p><figure class="content-center">
-    <img src="/resources/usage/step-by-step/step4.png" alt="">
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
-<doc-anchor-target id="step-5-reviewing-the-plugins-response">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#step-5-reviewing-the-plugins-response">#</doc-anchor-trigger>
-        <span>Step 5: Reviewing the Plugin&#x27;s Response</span>
-    </h2>
-</doc-anchor-target>
-<p>Once the analysis is complete, AskTheCode will provide a comprehensive description of the main components, their interactions, and any other relevant details as instructed in the prompt.</p>
-<doc-anchor-target id="visualizing-the-analysis-mermaid-flowchart">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#visualizing-the-analysis-mermaid-flowchart">#</doc-anchor-trigger>
-        <span>Visualizing the Analysis: Mermaid Flowchart</span>
-    </h2>
-</doc-anchor-target>
-<p>To further enhance our understanding of the &#x27;GET api/catalog-items&#x27; endpoint and its dependencies, we can visualize the results using a Mermaid flowchart. This provides a graphical representation of the interactions and flow of the endpoint, making it easier to grasp the overall structure and logic.</p>
-<p>By prompting ChatGPT with the following:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">Please build a mermaid flowchart diagram based on this research</code></pre>
-</doc-codeblock></div>
-<p>We can obtain a Mermaid diagram as follows:</p>
-<div class="overflow-hidden mb-6 py-4 dark:px-5 dark:bg-white rounded-md"><pre class="mermaid w-full">flowchart TD
-
-subgraph CatalogItemListPagedEndpoint
-    A[GET api/catalog-items] --&gt; B[HandleAsync]
-    B --&gt; C[Use CatalogFilterSpecification]
-    B --&gt; D[Use CatalogFilterPaginatedSpecification]
-    B --&gt; E[Fetch items from IRepository&lt;CatalogItem&gt;]
-    B --&gt; F[Map items using IMapper]
-    B --&gt; G[Compose picture URIs using IUriComposer]
-end
-
-subgraph Specifications
-    C --&gt; H[Filter by brandId &amp; typeId]
-    D --&gt; I[Paginate results]
-end
-
-subgraph Dependencies
-    E --&gt; J[IRepository&lt;CatalogItem&gt;]
-    F --&gt; K[IMapper]
-    G --&gt; L[IUriComposer]
-end
-
-subgraph IRepository
-    J --&gt; M[CRUD operations]
-    J --&gt; N[Query methods]
-end</pre></div>
 <doc-anchor-target id="conclusion">
-    <h2>
+    <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#conclusion">#</doc-anchor-trigger>
         <span>Conclusion</span>
-    </h2>
+    </h3>
 </doc-anchor-target>
-<p>By providing a clear and structured prompt to the AskTheCode plugin, you can harness its power to get precise insights into specific parts of a codebase. This approach can be replicated for other endpoints or repositories, demonstrating the flexibility and capability of the plugin.</p>
+<p>The <code v-pre>Repository Search</code> functionality enhances the capabilities of the plugin, offering users a more refined and targeted approach to navigating Github repositories. By addressing the repository size limitations of the base functionality and providing a solution tailored to user queries, it ensures a more efficient and user-centric experience.</p>
 
                                 
                                 <!-- Required only on API pages -->
@@ -359,20 +281,20 @@ end</pre></div>
                             
                                 <nav class="flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/usage/custom-branches/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/usage/issues/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                                                <span class="block mt-1">Custom Branches</span>
+                                                <span class="block mt-1">Github Issues</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/usage/issues/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/usage/pull-requests/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                                                <span class="block mt-1">Github Issues</span>
+                                                <span class="block mt-1">Pull Requests</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -416,6 +338,6 @@ end</pre></div>
 
     <div id="docs-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Step-by-Step Prompting", level: 2, icon: "file", hasPrism: false, hasMermaid: true, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Search (beta)", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
