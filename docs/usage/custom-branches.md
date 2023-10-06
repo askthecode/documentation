@@ -41,7 +41,7 @@ please give me an example of how it can be used
 
 If you encounter issues accessing specific branches or commits, consider the following steps to diagnose and resolve the problem:
 
-1. **Check the URL Format**: Ensure that the URL format is correct when specifying a branch or commit. For branches, the URL should look like `https://github.com/<owner>/<repo>/tree/<branch-name>`. For commits, it should be `https://github.com/owner/repo/tree/<commit-sha>`.
+1. **Check the URL Format**: Ensure that the URL format is correct when specifying a branch or commit. For branches, the URL should look like `https://github.com/<owner>/<repo>/tree/<branch-name>`. For commits, it should be `https://github.com/<owner>/<repo>/tree/<commit-sha>`.
 
 2. **Custom Instructions for ChatGPT**: The way ChatGPT interacts with the AskTheCode plugin can be influenced by previous conversations and prompts. If you have set custom instructions for how you want ChatGPT to respond to your inquiries, it might interfere with the plugin's functionality. Consider removing or modifying these instructions and try accessing the branch or commit again.
 

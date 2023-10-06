@@ -36,6 +36,16 @@ On this page, you can press the "Change account" link, and you'll be redirected 
 
 ## Troubleshooting
 
+### Couldn't Log in with Plugin
+
+If you encounter an issue where you're unable to log in using the plugin, it might be related to a known OpenAI issue experienced by some users who use a non-English language in their browser.
+
+To resolve this issue:
+
+1. Change the browser language to English.
+2. If the browser translation feature is turned on and set to a language other than English, change it to English as well.
+
+
 ### Unable to Retrieve Data from Private Repository
 
 If you encounter an error when trying to retrieve data from your private repository, the issue might be related to the following error message:
