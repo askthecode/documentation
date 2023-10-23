@@ -1,7 +1,13 @@
 ---
-label: Repository Commit
+label: Repository Commit (beta)
 icon: git-commit
 order: 80
+---
+
+!!!warning Beta Feature
+The **Repository Commit** functionality described in this document is **currently in beta**. Please be aware that there might be some unexpected behaviors.
+!!!
+
 ---
 
 ### Overview
