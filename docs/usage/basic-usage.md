@@ -62,11 +62,3 @@ However, with the AskTheCode plugin, ChatGPT can directly fetch and analyze the 
 - Familiarize yourself with the repository's structure to ask more targeted questions.
 
 ---
-
-## Constraints
-
-- **File Size Limit:** The maximum file size supported by AskTheCode is **95,000** characters long. This limit is due to the current restrictions of ChatGPT for the maximum plugin response size.
-  
-- **Large Files:** Issues can occur with very large files due to the limits of the ChatGPT context size. It's recommended to be cautious when analyzing large files.
-
-- **Repository Structure Limit:** Currently, the plugin can retrieve the structure of repositories that have less than **100,000 files** with a maximum size of **7 MB** for their structure. This limitation is derived from the [GitHub tree endpoint](https://docs.github.com/en/rest/git/trees?apiVersion=2022-11-28#get-a-tree).

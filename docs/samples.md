@@ -21,3 +21,18 @@ In this sample, we dive into understanding how the [Refit](https://github.com/re
 !!!info Note
 As we continue to enhance AskTheCode, more samples will be added to this page.
 !!!
+
+#### Langchain and ChatGPT Plugins Integration
+
+Lets assume we are targeting to find out about integrating ChatGPT plugin into the Langchain pipeline. For that we can provide the link to the [docs directory in the Langchain Github repository](https://github.com/langchain-ai/langchain/tree/master/docs) and ask ChatGPT to look for the details of integration. Since the repository of the Langchain is quite huge, the prompt should be pretty specific, something like:
+
+```Prompt
+https://github.com/langchain-ai/langchain/tree/master/docs
+
+Langchain is capable of integrating ChatGPT Plugins into the pipeline. For this it uses the specific tool.
+Please give me an example of using this tool
+```
+
+This will give us a sample of how to integrate Langchain with the GPT plugin:
+
+![](/resources/usage/search/langchain-sample-no-search.png)
