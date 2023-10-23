@@ -6,40 +6,38 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.749909419376">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.751418572844">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
 
     <!-- Primary Meta Tags -->
-    <title>Search</title>
-    <meta name="title" content="Search">
-    <meta name="description" content="The Search functionality described in this document is currently in beta. Please be aware that there might be some unexpected behaviors.">
+    <title>Pull Requests</title>
+    <meta name="title" content="Pull Requests">
+    <meta name="description" content="The Pull Requests feature described in this document is not yet implemented. It is planned for a future release. Stay tuned for updates!">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://askthecode.github.io/usage/search/">
+    <link rel="canonical" href="https://askthecode.github.io/features/pull-requests/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://askthecode.github.io/usage/search/">
-    <meta property="og:title" content="Search">
-    <meta property="og:description" content="The Search functionality described in this document is currently in beta. Please be aware that there might be some unexpected behaviors.">
-    <meta property="og:image" content="https://askthecode.github.io/resources/usage/search/sample.png">
+    <meta property="og:url" content="https://askthecode.github.io/features/pull-requests/">
+    <meta property="og:title" content="Pull Requests">
+    <meta property="og:description" content="The Pull Requests feature described in this document is not yet implemented. It is planned for a future release. Stay tuned for updates!">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://askthecode.github.io/usage/search/">
-    <meta property="twitter:title" content="Search">
-    <meta property="twitter:description" content="The Search functionality described in this document is currently in beta. Please be aware that there might be some unexpected behaviors.">
-    <meta property="twitter:image" content="https://askthecode.github.io/resources/usage/search/sample.png">
+    <meta property="twitter:url" content="https://askthecode.github.io/features/pull-requests/">
+    <meta property="twitter:title" content="Pull Requests">
+    <meta property="twitter:description" content="The Pull Requests feature described in this document is not yet implemented. It is planned for a future release. Stay tuned for updates!">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=3.5.0.749909419376" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=3.5.0.751418572844" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=3.5.0.749909419376" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=3.5.0.751418572844" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.5.0.749909419376" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.5.0.751418572844" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -206,10 +204,10 @@
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="docs-sidebar-right-toggle"></div>
                                 <!-- Page content  -->
-<doc-anchor-target id="search" class="break-words">
+<doc-anchor-target id="pull-requests" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#search">#</doc-anchor-trigger>
-        <span>Search</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#pull-requests">#</doc-anchor-trigger>
+        <span>Pull Requests</span>
     </h1>
 </doc-anchor-target>
 <div class="flex mb-6">
@@ -224,8 +222,8 @@
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-            <h5>Beta Feature</h5>
-<p>The <strong>Search</strong> functionality described in this document is <strong>currently in beta</strong>. Please be aware that there might be some unexpected behaviors.</p>
+            <h5>Upcoming Feature</h5>
+<p>The <strong>Pull Requests</strong> feature described in this document is <strong>not yet implemented</strong>. It is planned for a future release. Stay tuned for updates!</p>
         </div>
     </div>
 </div>
@@ -236,7 +234,7 @@
         <span>Overview</span>
     </h3>
 </doc-anchor-target>
-<p>The Github Repository Search functionality is a feature designed to enhance interactions with Github repositories. By leveraging the Github Search feature, it provides more precise results when users specify particular entities such as a class, method, file etc. Unlike the base version of the plugin, which returns the entire repository structure to ChatGPT, this feature narrows down the results based on user input, ensuring more relevant and accurate responses.</p>
+<p>The Pull Requests feature enhances the developer&#x27;s experience by allowing them to gain insights into the changes made in a particular pull request. By providing a link to a pull request, ChatGPT can analyze the changes, suggest potential refactorings, and offer other valuable feedback.</p>
 <doc-anchor-target id="why-its-useful">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#why-its-useful">#</doc-anchor-trigger>
@@ -244,37 +242,22 @@
     </h3>
 </doc-anchor-target>
 <ul>
-<li><strong>Enhanced Precision</strong>: By specifying entities like files, classes, or methods, users can get directly relevant results, bypassing unrelated content.</li>
-<li><strong>Overcome Base Limitations</strong>: The Search feature addresses the <a href="/usage/basic-usage/#constraints">Repository Structure Limit constraint</a> of the base functionality, offering a more refined search experience.</li>
-<li><strong>Quick Access</strong>: Users can swiftly navigate to the exact sections of a repository they&#x27;re interested in.</li>
-<li><strong>Optimized for Large Repositories</strong>: Especially useful for extensive repositories where the base functionality might be overwhelmed.</li>
+<li><strong>Code Quality</strong>: Receive suggestions for refactorings that can improve the code&#x27;s readability, maintainability, and performance.</li>
+<li><strong>Efficient Review</strong>: Speed up the review process by getting insights into the changes without manually analyzing every line.</li>
+<li><strong>Learning Opportunity</strong>: Understand best practices and potential pitfalls in your code, aiding in continuous learning and improvement.</li>
 </ul>
-<doc-anchor-target id="sample-net-runtime-repository-analysis">
+<doc-anchor-target id="how-to-use">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#sample-net-runtime-repository-analysis">#</doc-anchor-trigger>
-        <span>Sample: .NET Runtime Repository Analysis</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#how-to-use">#</doc-anchor-trigger>
+        <span>How to Use</span>
     </h3>
 </doc-anchor-target>
-<p><strong>Full Sample URL</strong>: <a href="https://chat.openai.com/share/e94cbb96-9aee-4e99-9b71-60e7ab1b0dab">Proposal for Skipping Visibility Checks</a></p>
-<p>In this sample, we use the plugin to analyze the proposal in the .NET runtime repository. This repository is enormously large and greatly exceeds the <a href="/usage/basic-usage/#constraints">repository size constraints</a>.</p>
-<p>Steps in the sample:</p>
 <ol>
-<li>First, we use the <a href="/usage/issues/">Issues</a> feature to analyze the proposal description and comments.</li>
-<li>We try to find the details about the attribute mentioned in the proposal.</li>
-<li>The continuation of the conversation is omitted, but the user could use the plugin to continue the analysis.</li>
+<li>Start a chat with ChatGPT using the AskTheCode plugin.</li>
+<li>Provide the link to the pull request you wish to analyze.</li>
+<li>Ask questions or request feedback related to the changes in the provided pull request.</li>
+<li>ChatGPT will analyze the pull request&#x27;s changes and provide suggestions, potential refactorings, or other relevant feedback.</li>
 </ol>
-<p><figure class="content-center">
-    <img src="/resources/usage/search/sample.png" alt="">
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
-<doc-anchor-target id="conclusion">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#conclusion">#</doc-anchor-trigger>
-        <span>Conclusion</span>
-    </h3>
-</doc-anchor-target>
-<p>The <code v-pre>Repository Search</code> functionality enhances the capabilities of the plugin, offering users a more refined and targeted approach to navigating Github repositories. By addressing the repository size limitations of the base functionality and providing a solution tailored to user queries, it ensures a more efficient and user-centric experience.</p>
 
                                 
                                 <!-- Required only on API pages -->
@@ -284,20 +267,20 @@
                             
                                 <nav class="flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/usage/issues/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/features/repository-search/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                                                <span class="block mt-1">Github Issues</span>
+                                                <span class="block mt-1">Repository Search (beta)</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/usage/pull-requests/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/usage/basic-usage/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                                                <span class="block mt-1">Pull Requests</span>
+                                                <span class="block mt-1">Basic Usage</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -341,6 +324,6 @@
 
     <div id="docs-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Search (beta)", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Pull Requests", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
