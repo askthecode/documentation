@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.751419317818">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.751593632367">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -33,11 +33,11 @@
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=3.5.0.751419317818" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=3.5.0.751593632367" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=3.5.0.751419317818" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=3.5.0.751593632367" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.5.0.751419317818" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.5.0.751593632367" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -241,6 +241,29 @@
 <li><strong>Large Files:</strong> Issues can occur with very large files due to the limits of the ChatGPT context size. It&#x27;s recommended to be cautious when analyzing large files.</li>
 <li><strong>Repository Structure Limit:</strong> Currently, the plugin can retrieve the structure of repositories that have less than <strong>100,000 files</strong> with a maximum size of <strong>7 MB</strong> for their structure. This limitation is derived from the <a href="https://docs.github.com/en/rest/git/trees?apiVersion=2022-11-28#get-a-tree">GitHub tree endpoint</a>.</li>
 </ul>
+<doc-anchor-target id="sample">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#sample">#</doc-anchor-trigger>
+        <span>Sample</span>
+    </h3>
+</doc-anchor-target>
+<doc-anchor-target id="basic-sample">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#basic-sample">#</doc-anchor-trigger>
+        <span>Basic sample</span>
+    </h4>
+</doc-anchor-target>
+<p>The sample and guidelines can be found <a href="/usage/basic-usage/">here</a></p>
+<doc-anchor-target id="retrieving-files-by-pages">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#retrieving-files-by-pages">#</doc-anchor-trigger>
+        <span>Retrieving Files by Pages</span>
+    </h4>
+</doc-anchor-target>
+<p>Sometimes you might prompt ChatGPT for something that will require it to query multiple files from the repository, and the total size of these files can be quite large. If the plugin were to simply return all contents to ChatGPT, it would significantly overflow the context of the GPT-4 model used under the hood, and resulted in a poor response quality. To prevent this, the plugin detects when the total size of the requested files is significant and pages them.</p>
+<p>Let&#x27;s assume that we want to query all functions defined in the <a href="https://github.com/langchain-ai/langchain/tree/master/libs/langchain/langchain/utils">Langchain Utils directory</a>.</p>
+<p>Sample conversation: <a href="https://chat.openai.com/share/f349d959-d957-47f7-a7f7-0febe9197602">https://chat.openai.com/share/f349d959-d957-47f7-a7f7-0febe9197602</a></p>
+<p>The total size of all files within this directory is large, which would result in ChatGPT compressing file contents, significantly impacting the response quality. Instead, the plugin paginates results, allowing ChatGPT to analyze the amount of data it can process at once.</p>
 
                                 
                                 <!-- Required only on API pages -->

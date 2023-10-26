@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.751419317818">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.751593632367">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -33,11 +33,11 @@
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=3.5.0.751419317818" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=3.5.0.751593632367" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=3.5.0.751419317818" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=3.5.0.751593632367" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.5.0.751419317818" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.5.0.751593632367" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -248,6 +248,45 @@
 <li><strong>Iterative Analysis</strong>: For large commits, paging is implemented, allowing ChatGPT to analyze changes iteratively.</li>
 <li><strong>Full File Content Loading</strong>: Users can request ChatGPT to load the full file content before or after the commit for a more in-depth analysis.</li>
 </ul>
+<doc-anchor-target id="sample">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#sample">#</doc-anchor-trigger>
+        <span>Sample</span>
+    </h3>
+</doc-anchor-target>
+<doc-anchor-target id="small-commit-analysis">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#small-commit-analysis">#</doc-anchor-trigger>
+        <span>Small commit analysis</span>
+    </h4>
+</doc-anchor-target>
+<p><strong>Full Sample URL</strong>: <a href="https://chat.openai.com/share/997785f1-4b27-478b-92c3-4672ef9b0f60">ChatGPT Sample</a></p>
+<p>In this sample, we are analyzing a commit from the .NET Runtime github repository:
+<a href="https://github.com/dotnet/runtime/commit/b09e18e8b6092e35611c2567bd55e8909ea78d7d">.NET Runtime Commit</a></p>
+<p>We are prompting ChatGPT with the next prompt:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">https://github.com/dotnet/runtime/commit/b09e18e8b6092e35611c2567bd55e8909ea78d7d
+
+Act as a proficient C# .NET developer.
+
+Please give me an overview of the commit and then iterate over the changes in this commit, analyze files one by one. For each file output:
+1. How many lines were added, updated, and deleted (in one line)
+2. Describe what have been changed. Do not use some general reviews like code cleanup etc but describe the actual change. If code is added, say what new code does. If updated, analyze what was before and how the new code improves the previous one. If deleted, say what has been deleted and try to elaborate why.
+3. Map changes to the commit description and how it correlates.
+4. Please make a review of the changes and say if some fixes are required. Pay attention both to coding style and the meaning of changes. Especially this goes to removal - highlight which code has been removed and why. Respond only with &quot;passed the review&quot; or &quot;failed.&quot;
+5. Highlight areas that should be reviewed by a human. Do that only when you spot some issues with the changes or when you cannot be sure that the change is needed and solves any issue. Otherwise, say that no review is needed.</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="larger-commit-analysis">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#larger-commit-analysis">#</doc-anchor-trigger>
+        <span>Larger commit analysis</span>
+    </h4>
+</doc-anchor-target>
+<p>Some commits are large enough that they cannot be analyzed in one go. To maintain response quality, the plugin pages the commit changes in the case of large commits.</p>
+<p><strong>Full Sample URL</strong>: <a href="https://chat.openai.com/share/438050fd-c059-4c1e-a2e4-7b3de2d134e8">ChatGPT Sample</a></p>
+<p>In this sample, we&#x27;ll analyze a commit from the Semantic Kernel GitHub repository:
+<a href="https://github.com/microsoft/semantic-kernel/commit/18ffc4bf2f2b57d3c58381e8d961e3757ce0c991">Semantic Kernel Commit</a></p>
+<p>In this case, the commit contains changes in 13 files. These changes are quite extensive. So, when prompted with similar prompts as above, it analyzes only the first 5 files with the first request and then analyzes the remaining files with the second request.</p>
 
                                 
                                 <!-- Required only on API pages -->
