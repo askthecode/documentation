@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.751593632367">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.752889499857">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -17,29 +17,29 @@
     <meta name="description" content="The screenshots provided in this guide are based on an older version of the AskTheCode plugin.">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://askthecode.github.io/usage/step-by-step/">
+    <link rel="canonical" href="https://askthecode.github.io/usage/iterative/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://askthecode.github.io/usage/step-by-step/">
+    <meta property="og:url" content="https://askthecode.github.io/usage/iterative/">
     <meta property="og:title" content="Step-by-Step Prompting">
     <meta property="og:description" content="The screenshots provided in this guide are based on an older version of the AskTheCode plugin.">
-    <meta property="og:image" content="https://askthecode.github.io/resources/usage/step-by-step/step2.png">
+    <meta property="og:image" content="https://askthecode.github.io/resources/usage/iterative/step2.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://askthecode.github.io/usage/step-by-step/">
+    <meta property="twitter:url" content="https://askthecode.github.io/usage/iterative/">
     <meta property="twitter:title" content="Step-by-Step Prompting">
     <meta property="twitter:description" content="The screenshots provided in this guide are based on an older version of the AskTheCode plugin.">
-    <meta property="twitter:image" content="https://askthecode.github.io/resources/usage/step-by-step/step2.png">
+    <meta property="twitter:image" content="https://askthecode.github.io/resources/usage/iterative/step2.png">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=3.5.0.751593632367" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=3.5.0.752889499857" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=3.5.0.751593632367" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=3.5.0.752889499857" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.5.0.751593632367" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.5.0.752889499857" data-turbo-eval="false" defer></script>
     <script id="mermaid-js" data-cfasync="false" src="/resources/js/mermaid.js?v=3.5.0" defer></script>
 </head>
 <body>
@@ -231,6 +231,8 @@
     </div>
 </div>
 <p>In this guide, we&#x27;ll showcase the power of specifying steps for the AskTheCode plugin. By providing a structured prompt, you can guide the plugin to analyze code in a more focused manner, ensuring you get the insights you need.</p>
+<p>Full demo can be found here:
+<a href="https://chat.openai.com/share/f28333ee-f689-4f9c-8564-5d4147a7ae7e">Endpoint Handling Flow Analysis</a></p>
 <doc-anchor-target id="prerequisites">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#prerequisites">#</doc-anchor-trigger>
@@ -256,7 +258,7 @@ https://github.com/dotnet-architecture/eShopOnWeb
 
 Follow these steps:
 
-1. Locate the file that handles the specified route in the repository.
+1. Locate the file that handles the specified endpoint in the repository. Make sure that it is the correct file and it indeed contains the logic for the endpoint handling.
 2. Analyze the code of the handler to understand its functionality.
 3. Fetch the code of all dependencies related to the route handler and data retrieval logic.
 4. Analyze the dependencies, including their code and further dependencies if needed.
@@ -273,7 +275,7 @@ Make sure to provide a structured and easy-to-understand response that demonstra
 </doc-anchor-target>
 <p>Upon receiving the prompt, AskTheCode will begin its search for the file handling the &#x27;GET api/catalog-items&#x27; route.</p>
 <p><figure class="content-center">
-    <img src="/resources/usage/step-by-step/step2.png" alt="">
+    <img src="/resources/usage/iterative/step2.png" alt="">
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
@@ -283,21 +285,40 @@ Make sure to provide a structured and easy-to-understand response that demonstra
         <span>Step 3: Plugin Identifying Dependencies</span>
     </h2>
 </doc-anchor-target>
-<p>The plugin will then identify and fetch the dependencies related to the route handler. This is based on the instructions provided in the prompt.</p>
+<p>Now we need to ask the plugin to proceed with the depndencies analysis.</p>
+<p><strong>Input the following prompt:</strong></p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">plaintext</div>
+<pre class="language-none"><code v-pre class="language-none">Please continue with the dependencies analysis</code></pre>
+</doc-codeblock></div>
 <p><figure class="content-center">
-    <img src="/resources/usage/step-by-step/step3.png" alt="">
+    <img src="/resources/usage/iterative/step3.png" alt="">
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
-<doc-anchor-target id="step-4-plugins-dependency-analysis">
+<doc-anchor-target id="step-4-6-re-iterating-with-dependency-analysis">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#step-4-plugins-dependency-analysis">#</doc-anchor-trigger>
-        <span>Step 4: Plugin&#x27;s Dependency Analysis</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#step-4-6-re-iterating-with-dependency-analysis">#</doc-anchor-trigger>
+        <span>Step 4-6: Re-iterating with Dependency Analysis</span>
     </h2>
 </doc-anchor-target>
-<p>AskTheCode will analyze the dependencies, diving deep into their code, understanding their functionality, and identifying any further dependencies.</p>
+<p>Now we can ask the plugin to proceed with the dependency analysis over and over until we are satisfied with the results. To keep the knowledge gained in context and prevent losing it, we ask ChatGPT to summarize all the knowledge gained first and only then proceed with further research.</p>
+<p><strong>Input the following prompt:</strong></p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">plaintext</div>
+<pre class="language-none"><code v-pre class="language-none">Please summarize what you've learned so far and then continue with the dependencies analysis</code></pre>
+</doc-codeblock></div>
+<p>This process can be repeated as many times as needed (3 times in this demo).</p>
 <p><figure class="content-center">
-    <img src="/resources/usage/step-by-step/step4.png" alt="">
+    <img src="/resources/usage/iterative/step4.1.png" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+<figure class="content-center">
+    <img src="/resources/usage/iterative/step4.2.png" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+<figure class="content-center">
+    <img src="/resources/usage/iterative/step4.3.png" alt="">
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
@@ -317,35 +338,59 @@ Make sure to provide a structured and easy-to-understand response that demonstra
 <p>To further enhance our understanding of the &#x27;GET api/catalog-items&#x27; endpoint and its dependencies, we can visualize the results using a Mermaid flowchart. This provides a graphical representation of the interactions and flow of the endpoint, making it easier to grasp the overall structure and logic.</p>
 <p>By prompting ChatGPT with the following:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">Please build a mermaid flowchart diagram based on this research</code></pre>
+<pre class="language-none"><code v-pre class="language-none">Please build a detailed mermaid flowchart diagram based on this research. Group related entities into subgraphs, use cylindrical shaped nodes only for the database</code></pre>
 </doc-codeblock></div>
-<p>We can obtain a Mermaid diagram as follows:</p>
-<div class="overflow-hidden mb-6 py-4 dark:px-5 dark:bg-white rounded-md"><pre class="mermaid w-full">flowchart TD
+<p>We can obtain a Mermaid diagram similar to the following:</p>
+<div class="overflow-hidden mb-6 py-4 dark:px-5 dark:bg-white rounded-md"><pre class="mermaid w-full">flowchart TB
+    subgraph Client
+    Request[&quot;Request (GET api/catalog-items)&quot;]
+    end
 
-subgraph CatalogItemListPagedEndpoint
-    A[GET api/catalog-items] --&gt; B[HandleAsync]
-    B --&gt; C[Use CatalogFilterSpecification]
-    B --&gt; D[Use CatalogFilterPaginatedSpecification]
-    B --&gt; E[Fetch items from IRepository&lt;CatalogItem&gt;]
-    B --&gt; F[Map items using IMapper]
-    B --&gt; G[Compose picture URIs using IUriComposer]
-end
+    subgraph API[&quot;eShopOnWeb API&quot;]
+    Handler[&quot;CatalogItemListPagedEndpoint.HandleAsync()&quot;]
+    RequestModel[&quot;ListPagedCatalogItemRequest&quot;]
+    end
 
-subgraph Specifications
-    C --&gt; H[Filter by brandId &amp; typeId]
-    D --&gt; I[Paginate results]
-end
+    subgraph ApplicationCore
+    Specifications[&quot;Specifications&quot;]
+    CatalogFilterSpec[&quot;CatalogFilterSpecification&quot;]
+    CatalogFilterPaginatedSpec[&quot;CatalogFilterPaginatedSpecification&quot;]
+    end
 
-subgraph Dependencies
-    E --&gt; J[IRepository&lt;CatalogItem&gt;]
-    F --&gt; K[IMapper]
-    G --&gt; L[IUriComposer]
-end
+    subgraph Infrastructure
+    Repository[&quot;EfRepository&lt;CatalogItem&gt;&quot;]
+    DbContext[&quot;CatalogContext (EF Core)&quot;]
+    UriComposerService[&quot;UriComposer&quot;]
+    CatalogSettingsConfig[&quot;CatalogSettings&quot;]
+    end
 
-subgraph IRepository
-    J --&gt; M[CRUD operations]
-    J --&gt; N[Query methods]
-end</pre></div>
+    subgraph ExternalLibraries
+    AutoMapper[&quot;AutoMapper&quot;]
+    SpecificationLib[&quot;Ardalis.Specification&quot;]
+    end
+
+    subgraph Database
+    db[(&quot;(Database)&quot;)]
+    end
+
+    Client --&gt;|HTTP GET| Handler
+    Handler --&gt;|Uses| RequestModel
+    Handler --&gt;|Maps with| AutoMapper
+    Handler --&gt;|Composes URIs with| UriComposerService
+    Handler --&gt;|Reads BaseUrl| CatalogSettingsConfig
+    Handler --&gt;|Executes| Repository
+    Repository --&gt;|Uses| DbContext
+    DbContext --&gt;|Interacts with| db
+    Repository --&gt;|Applies| Specifications
+    Specifications --&gt; CatalogFilterSpec
+    Specifications --&gt; CatalogFilterPaginatedSpec
+    AutoMapper -.-&gt;|Mapping Configurations| ApplicationCore
+    SpecificationLib -.-&gt;|Specification Patterns| ApplicationCore
+
+    %% Styling
+    classDef database fill:#f96,stroke:#333,stroke-width:2px;
+    class db database;
+</pre></div>
 <doc-anchor-target id="conclusion">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#conclusion">#</doc-anchor-trigger>
@@ -419,6 +464,6 @@ end</pre></div>
 
     <div id="docs-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Step-by-Step Prompting", level: 2, icon: "file", hasPrism: false, hasMermaid: true, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Iterative Prompting", level: 2, icon: "file", hasPrism: false, hasMermaid: true, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
