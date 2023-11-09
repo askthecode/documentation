@@ -1,5 +1,5 @@
 ---
-label: Step-by-Step Prompting
+label: Iterative Prompting
 icon: number
 order: 80
 ---
@@ -11,6 +11,9 @@ The screenshots provided in this guide are based on an older version of the AskT
 !!!
 
 In this guide, we'll showcase the power of specifying steps for the AskTheCode plugin. By providing a structured prompt, you can guide the plugin to analyze code in a more focused manner, ensuring you get the insights you need.
+
+Full demo can be found here:
+[Endpoint Handling Flow Analysis](https://chat.openai.com/share/f28333ee-f689-4f9c-8564-5d4147a7ae7e)
 
 ## Prerequisites
 
@@ -29,7 +32,7 @@ https://github.com/dotnet-architecture/eShopOnWeb
 
 Follow these steps:
 
-1. Locate the file that handles the specified route in the repository.
+1. Locate the file that handles the specified endpoint in the repository. Make sure that it is the correct file and it indeed contains the logic for the endpoint handling.
 2. Analyze the code of the handler to understand its functionality.
 3. Fetch the code of all dependencies related to the route handler and data retrieval logic.
 4. Analyze the dependencies, including their code and further dependencies if needed.
@@ -43,19 +46,35 @@ Make sure to provide a structured and easy-to-understand response that demonstra
 
 Upon receiving the prompt, AskTheCode will begin its search for the file handling the 'GET api/catalog-items' route.
 
-![](/resources/usage/step-by-step/step2.png)
+![](/resources/usage/iterative/step2.png)
 
 ## Step 3: Plugin Identifying Dependencies
 
-The plugin will then identify and fetch the dependencies related to the route handler. This is based on the instructions provided in the prompt.
+Now we need to ask the plugin to proceed with the depndencies analysis.
 
-![](/resources/usage/step-by-step/step3.png)
+**Input the following prompt:**
 
-## Step 4: Plugin's Dependency Analysis
+```plaintext
+Please continue with the dependencies analysis
+```
 
-AskTheCode will analyze the dependencies, diving deep into their code, understanding their functionality, and identifying any further dependencies.
+![](/resources/usage/iterative/step3.png)
 
-![](/resources/usage/step-by-step/step4.png)
+## Step 4-6: Re-iterating with Dependency Analysis
+
+Now we can ask the plugin to proceed with the dependency analysis over and over until we are satisfied with the results. To keep the knowledge gained in context and prevent losing it, we ask ChatGPT to summarize all the knowledge gained first and only then proceed with further research.
+
+**Input the following prompt:**
+
+```plaintext
+Please summarize what you've learned so far and then continue with the dependencies analysis
+```
+
+This process can be repeated as many times as needed (3 times in this demo).
+
+![](/resources/usage/iterative/step4.1.png)
+![](/resources/usage/iterative/step4.2.png)
+![](/resources/usage/iterative/step4.3.png)
 
 ## Step 5: Reviewing the Plugin's Response
 
@@ -68,38 +87,62 @@ To further enhance our understanding of the 'GET api/catalog-items' endpoint and
 By prompting ChatGPT with the following:
 
 ```
-Please build a mermaid flowchart diagram based on this research
+Please build a detailed mermaid flowchart diagram based on this research. Group related entities into subgraphs, use cylindrical shaped nodes only for the database
 ```
 
-We can obtain a Mermaid diagram as follows:
+We can obtain a Mermaid diagram similar to the following:
 
 ```mermaid
-flowchart TD
+flowchart TB
+    subgraph Client
+    Request["Request (GET api/catalog-items)"]
+    end
 
-subgraph CatalogItemListPagedEndpoint
-    A[GET api/catalog-items] --> B[HandleAsync]
-    B --> C[Use CatalogFilterSpecification]
-    B --> D[Use CatalogFilterPaginatedSpecification]
-    B --> E[Fetch items from IRepository<CatalogItem>]
-    B --> F[Map items using IMapper]
-    B --> G[Compose picture URIs using IUriComposer]
-end
+    subgraph API["eShopOnWeb API"]
+    Handler["CatalogItemListPagedEndpoint.HandleAsync()"]
+    RequestModel["ListPagedCatalogItemRequest"]
+    end
 
-subgraph Specifications
-    C --> H[Filter by brandId & typeId]
-    D --> I[Paginate results]
-end
+    subgraph ApplicationCore
+    Specifications["Specifications"]
+    CatalogFilterSpec["CatalogFilterSpecification"]
+    CatalogFilterPaginatedSpec["CatalogFilterPaginatedSpecification"]
+    end
 
-subgraph Dependencies
-    E --> J[IRepository<CatalogItem>]
-    F --> K[IMapper]
-    G --> L[IUriComposer]
-end
+    subgraph Infrastructure
+    Repository["EfRepository<CatalogItem>"]
+    DbContext["CatalogContext (EF Core)"]
+    UriComposerService["UriComposer"]
+    CatalogSettingsConfig["CatalogSettings"]
+    end
 
-subgraph IRepository
-    J --> M[CRUD operations]
-    J --> N[Query methods]
-end
+    subgraph ExternalLibraries
+    AutoMapper["AutoMapper"]
+    SpecificationLib["Ardalis.Specification"]
+    end
+
+    subgraph Database
+    db[("(Database)")]
+    end
+
+    Client -->|HTTP GET| Handler
+    Handler -->|Uses| RequestModel
+    Handler -->|Maps with| AutoMapper
+    Handler -->|Composes URIs with| UriComposerService
+    Handler -->|Reads BaseUrl| CatalogSettingsConfig
+    Handler -->|Executes| Repository
+    Repository -->|Uses| DbContext
+    DbContext -->|Interacts with| db
+    Repository -->|Applies| Specifications
+    Specifications --> CatalogFilterSpec
+    Specifications --> CatalogFilterPaginatedSpec
+    AutoMapper -.->|Mapping Configurations| ApplicationCore
+    SpecificationLib -.->|Specification Patterns| ApplicationCore
+
+    %% Styling
+    classDef database fill:#f96,stroke:#333,stroke-width:2px;
+    class db database;
+
 ```
 
 ## Conclusion

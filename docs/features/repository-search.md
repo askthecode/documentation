@@ -4,7 +4,7 @@ icon: codescan
 order: 60
 ---
 
-# Search
+# Repository Search
 
 !!!warning Beta Feature
 The **Search** functionality described in this document is **currently in beta**. Please be aware that there might be some unexpected behaviors.
