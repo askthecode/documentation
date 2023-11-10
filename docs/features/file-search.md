@@ -27,7 +27,7 @@ File Search returns "search hits", meaning that when a user queries for a specif
 
 ### Example
 
-You can find the sample usage of this feature in the [Usage > Querying Large File](/usage/large-file) documentation
+You can find the sample usage of this feature in the [Usage > Querying Large Files](/usage/large-files) documentation
 
 ### Conclusion
 
