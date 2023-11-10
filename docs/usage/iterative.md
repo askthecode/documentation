@@ -1,10 +1,10 @@
 ---
 label: Iterative Prompting
-icon: number
+icon: iterations
 order: 80
 ---
 
-# Step-by-Step Prompting
+# Iterative Prompting
 
 !!!warning Warning
 The screenshots provided in this guide are based on an older version of the AskTheCode plugin. The actual response from the plugin might differ (and hopefully be better) in the latest versions.
