@@ -27,7 +27,7 @@ The first step is to retrieve all defined classes and functions of the Qdrant ve
 **Input the following prompt:**  
 
 ```plaintext
-ttps://github.com/langchain-ai/langchain/
+https://github.com/langchain-ai/langchain/
 
 Please find path to the file that defines the qdrant vectorstore. Once you know the file path, search for all defined classes and functions in this file.
 ```
