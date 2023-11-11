@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.753061936433">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.753062211668">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -35,11 +35,11 @@
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/resources/css/retype.css?v=3.5.0.753061936433" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=3.5.0.753062211668" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=3.5.0.753061936433" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=3.5.0.753062211668" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.5.0.753061936433" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.5.0.753062211668" data-turbo-eval="false" defer></script>
     <script id="mermaid-js" data-cfasync="false" src="/resources/js/mermaid.js?v=3.5.0" defer></script>
 </head>
 <body>
@@ -252,7 +252,7 @@
 <p>The first step is to provide a clear and structured prompt to the AskTheCode plugin. This prompt acts as a set of instructions, guiding the plugin on what to analyze and how.</p>
 <p><strong>Input the following prompt:</strong></p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<div class="codeblock-title">plaintext</div>
+<div class="codeblock-title">prompt</div>
 <pre class="language-none"><code v-pre class="language-none">You are a technical documentation writer for the eShopOnWeb repository. Your task is to provide a clear and detailed description of the full handling flow for the endpoint 'GET api/catalog-items' in the given GitHub repository: 
 https://github.com/dotnet-architecture/eShopOnWeb
 
@@ -288,7 +288,7 @@ Make sure to provide a structured and easy-to-understand response that demonstra
 <p>Now we need to ask the plugin to proceed with the depndencies analysis.</p>
 <p><strong>Input the following prompt:</strong></p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<div class="codeblock-title">plaintext</div>
+<div class="codeblock-title">prompt</div>
 <pre class="language-none"><code v-pre class="language-none">Please continue with the dependencies analysis</code></pre>
 </doc-codeblock></div>
 <p><figure class="content-center">
@@ -305,7 +305,7 @@ Make sure to provide a structured and easy-to-understand response that demonstra
 <p>Now we can ask the plugin to proceed with the dependency analysis over and over until we are satisfied with the results. To keep the knowledge gained in context and prevent losing it, we ask ChatGPT to summarize all the knowledge gained first and only then proceed with further research.</p>
 <p><strong>Input the following prompt:</strong></p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<div class="codeblock-title">plaintext</div>
+<div class="codeblock-title">prompt</div>
 <pre class="language-none"><code v-pre class="language-none">Please summarize what you've learned so far and then continue with the dependencies analysis</code></pre>
 </doc-codeblock></div>
 <p>This process can be repeated as many times as needed (3 times in this demo).</p>
@@ -338,6 +338,7 @@ Make sure to provide a structured and easy-to-understand response that demonstra
 <p>To further enhance our understanding of the &#x27;GET api/catalog-items&#x27; endpoint and its dependencies, we can visualize the results using a Mermaid flowchart. This provides a graphical representation of the interactions and flow of the endpoint, making it easier to grasp the overall structure and logic.</p>
 <p>By prompting ChatGPT with the following:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">prompt</div>
 <pre class="language-none"><code v-pre class="language-none">Please build a detailed mermaid flowchart diagram based on this research. Group related entities into subgraphs, use cylindrical shaped nodes only for the database</code></pre>
 </doc-codeblock></div>
 <p>We can obtain a Mermaid diagram similar to the following:</p>
