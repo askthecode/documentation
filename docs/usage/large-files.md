@@ -26,7 +26,7 @@ The first step is to retrieve all defined classes and functions of the Qdrant ve
 
 **Input the following prompt:**  
 
-```plaintext
+```prompt
 https://github.com/langchain-ai/langchain/
 
 Please find path to the file that defines the qdrant vectorstore. Once you know the file path, search for all defined classes and functions in this file.
@@ -48,7 +48,7 @@ Now we want to ask the plugin to give us the body of the `_asearch_with_score_by
 
 **Input the following prompt:**
 
-```plaintext
+```prompt
 Please search for the definition of the _asearch_with_score_by_vector function. Grab first 300 lines. Respond with the body of this function.
 ```
 

@@ -40,7 +40,7 @@ If you're curious about a particular GitHub repository and want to get general i
 
 **Input the following prompt:**  
 
-```plaintext
+```prompt
 https://github.com/langchain-ai/langchain  
 What is LangChain?
 ```

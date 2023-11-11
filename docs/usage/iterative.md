@@ -26,7 +26,7 @@ The first step is to provide a clear and structured prompt to the AskTheCode plu
 
 **Input the following prompt:**  
 
-```plaintext
+```prompt
 You are a technical documentation writer for the eShopOnWeb repository. Your task is to provide a clear and detailed description of the full handling flow for the endpoint 'GET api/catalog-items' in the given GitHub repository: 
 https://github.com/dotnet-architecture/eShopOnWeb
 
@@ -54,7 +54,7 @@ Now we need to ask the plugin to proceed with the depndencies analysis.
 
 **Input the following prompt:**
 
-```plaintext
+```prompt
 Please continue with the dependencies analysis
 ```
 
@@ -66,7 +66,7 @@ Now we can ask the plugin to proceed with the dependency analysis over and over 
 
 **Input the following prompt:**
 
-```plaintext
+```prompt
 Please summarize what you've learned so far and then continue with the dependencies analysis
 ```
 
@@ -86,7 +86,7 @@ To further enhance our understanding of the 'GET api/catalog-items' endpoint and
 
 By prompting ChatGPT with the following:
 
-```
+```prompt
 Please build a detailed mermaid flowchart diagram based on this research. Group related entities into subgraphs, use cylindrical shaped nodes only for the database
 ```
 
