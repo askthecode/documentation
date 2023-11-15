@@ -1,11 +1,12 @@
 input: docs
 output: docs-ui
 url: askthecode.github.io
+favicon: /resources/logo.jpg
 
 branding:
   title: AskTheCode
   label: Docs
-  logo: /resources/logo.png
+  logo: /resources/logo.jpg
   logoAlign: left
 
 editor:
