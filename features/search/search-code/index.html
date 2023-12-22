@@ -6,39 +6,41 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.753755014601">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.756596497174">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
 
     <!-- Primary Meta Tags -->
-    <title>Pull Requests</title>
-    <meta name="title" content="Pull Requests">
-    <meta name="description" content="The Pull Requests feature described in this document is not yet implemented. It is planned for a future release. Stay tuned for updates!">
+    <title>Search Code</title>
+    <meta name="title" content="Search Code">
+    <meta name="description" content="Only the default branch is supported for this functionality.">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://askthecode.github.io/features/pull-requests/">
+    <link rel="canonical" href="https://askthecode.github.io/features/search/search-code/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://askthecode.github.io/features/pull-requests/">
-    <meta property="og:title" content="Pull Requests">
-    <meta property="og:description" content="The Pull Requests feature described in this document is not yet implemented. It is planned for a future release. Stay tuned for updates!">
+    <meta property="og:url" content="https://askthecode.github.io/features/search/search-code/">
+    <meta property="og:title" content="Search Code">
+    <meta property="og:description" content="Only the default branch is supported for this functionality.">
+    <meta property="og:image" content="https://askthecode.github.io/resources/usage/search/sample.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://askthecode.github.io/features/pull-requests/">
-    <meta property="twitter:title" content="Pull Requests">
-    <meta property="twitter:description" content="The Pull Requests feature described in this document is not yet implemented. It is planned for a future release. Stay tuned for updates!">
+    <meta property="twitter:url" content="https://askthecode.github.io/features/search/search-code/">
+    <meta property="twitter:title" content="Search Code">
+    <meta property="twitter:description" content="Only the default branch is supported for this functionality.">
+    <meta property="twitter:image" content="https://askthecode.github.io/resources/usage/search/sample.png">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="/resources/logo.jpg" rel="icon">
-    <link href="/resources/css/retype.css?v=3.5.0.753755014601" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=3.5.0.756596497174" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=3.5.0.753755014601" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=3.5.0.756596497174" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.5.0.753755014601" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.5.0.756596497174" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -225,26 +227,26 @@
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="docs-sidebar-right-toggle"></div>
                                 <!-- Page content  -->
-<doc-anchor-target id="pull-requests" class="break-words">
+<doc-anchor-target id="search-code" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#pull-requests">#</doc-anchor-trigger>
-        <span>Pull Requests</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#search-code">#</doc-anchor-trigger>
+        <span>Search Code</span>
     </h1>
 </doc-anchor-target>
 <div class="flex mb-6">
-    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-yellow-500"></div>
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
     <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
         <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-yellow-500" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
                 <g fill="currentColor"><g>
-                    <path d="M22.48 15.59L14.01 1.45A2.968 2.968 0 0012.16.09c-.78-.19-1.58-.07-2.27.35-.41.25-.76.6-1.01 1.01v.01L.4 15.6c-.83 1.43-.33 3.27 1.1 4.1.45.26.95.4 1.48.4h16.95c.8-.01 1.55-.33 2.11-.9.56-.57.87-1.33.86-2.13a3.04 3.04 0 00-.42-1.48zm-1.87 2.21c-.19.19-.44.3-.69.3H2.99c-.17 0-.34-.05-.49-.13a.992.992 0 01-.37-1.35L10.6 2.48c.08-.14.2-.25.34-.33a.992.992 0 011.37.33l8.46 14.13c.09.15.13.32.13.49 0 .26-.1.51-.29.7z"></path>
-                    <path d="M11.45 12.1c.55 0 1-.45 1-1v-4c0-.55-.45-1-1-1s-1 .45-1 1v4c0 .56.45 1 1 1zM11.46 14.1c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
                 </g></g>
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-            <h5>Upcoming Feature</h5>
-<p>The <strong>Pull Requests</strong> feature described in this document is <strong>not yet implemented</strong>. It is planned for a future release. Stay tuned for updates!</p>
+<p>Only the default branch is supported for this functionality.</p>
         </div>
     </div>
 </div>
@@ -255,7 +257,15 @@
         <span>Overview</span>
     </h3>
 </doc-anchor-target>
-<p>The Pull Requests feature enhances the developer&#x27;s experience by allowing them to gain insights into the changes made in a particular pull request. By providing a link to a pull request, ChatGPT can analyze the changes, suggest potential refactorings, and offer other valuable feedback.</p>
+<p>The Search Code functionality is a feature designed to enhance interactions with Github repositories. By leveraging the Github Search, it provides more precise results when users specify particular entities such as a class, method, file etc. Unlike the base version of the plugin, which returns the entire repository structure to ChatGPT, this feature narrows down the results based on user input, ensuring more relevant and accurate responses.</p>
+<doc-anchor-target id="search-hits-and-contextual-analysis">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#search-hits-and-contextual-analysis">#</doc-anchor-trigger>
+        <span>Search Hits and Contextual Analysis</span>
+    </h3>
+</doc-anchor-target>
+<p>One of the powerful aspects of the Search functionality is its ability to return search hits. This means that when a user queries for a specific entity, such as a method or class, the plugin doesn&#x27;t just identify its presence but also provides snippets or &quot;hits&quot; from the file where the entity is found.</p>
+<p>This capability is particularly useful in scenarios where users want to understand the context or usage of a specific method or entity without fetching the entire file content. For instance, if a user asks, &quot;Is this method only declared or also used somewhere across the file/repository?&quot;, the search hits can provide enough context to answer without needing to analyze the whole file.</p>
 <doc-anchor-target id="why-its-useful">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#why-its-useful">#</doc-anchor-trigger>
@@ -263,22 +273,43 @@
     </h3>
 </doc-anchor-target>
 <ul>
-<li><strong>Code Quality</strong>: Receive suggestions for refactorings that can improve the code&#x27;s readability, maintainability, and performance.</li>
-<li><strong>Efficient Review</strong>: Speed up the review process by getting insights into the changes without manually analyzing every line.</li>
-<li><strong>Learning Opportunity</strong>: Understand best practices and potential pitfalls in your code, aiding in continuous learning and improvement.</li>
+<li><strong>Enhanced Precision</strong>: By specifying entities like files, classes, or methods, users can get directly relevant results, bypassing unrelated content.</li>
+<li><strong>Overcome Base Limitations</strong>: The Search feature addresses the <a href="/features/repository-content/#constraints">Repository Structure Limit constraint</a> of the base functionality, offering a more refined search experience.</li>
+<li><strong>Quick Access</strong>: Users can swiftly navigate to the exact sections of a repository they&#x27;re interested in.</li>
+<li><strong>Optimized for Large Repositories</strong>: Especially useful for extensive repositories where the base functionality might be overwhelmed.</li>
 </ul>
-<doc-anchor-target id="how-to-use">
+<doc-anchor-target id="samples">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#how-to-use">#</doc-anchor-trigger>
-        <span>How to Use</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#samples">#</doc-anchor-trigger>
+        <span>Samples</span>
     </h3>
 </doc-anchor-target>
+<doc-anchor-target id="net-runtime-repository-analysis">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#net-runtime-repository-analysis">#</doc-anchor-trigger>
+        <span>.NET Runtime Repository Analysis</span>
+    </h4>
+</doc-anchor-target>
+<p><strong>Full Sample URL</strong>: <a href="https://chat.openai.com/share/e94cbb96-9aee-4e99-9b71-60e7ab1b0dab">Proposal for Skipping Visibility Checks</a></p>
+<p>In this sample, we use the plugin to analyze the proposal in the .NET runtime repository. This repository is enormously large and greatly exceeds the <a href="/features/repository-content/#constraints">repository size constraints</a>.</p>
+<p>Steps in the sample:</p>
 <ol>
-<li>Start a chat with ChatGPT using the AskTheCode plugin.</li>
-<li>Provide the link to the pull request you wish to analyze.</li>
-<li>Ask questions or request feedback related to the changes in the provided pull request.</li>
-<li>ChatGPT will analyze the pull request&#x27;s changes and provide suggestions, potential refactorings, or other relevant feedback.</li>
+<li>First, we use the <a href="/features/github-issues/">Issues</a> feature to analyze the proposal description and comments.</li>
+<li>We try to find the details about the attribute mentioned in the proposal.</li>
+<li>The continuation of the conversation is omitted, but the user could use the plugin to continue the analysis.</li>
 </ol>
+<p><figure class="content-center">
+    <img src="/resources/usage/search/sample.png" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<doc-anchor-target id="conclusion">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#conclusion">#</doc-anchor-trigger>
+        <span>Conclusion</span>
+    </h3>
+</doc-anchor-target>
+<p>The <code v-pre>Search Code</code> functionality enhances the capabilities of the plugin, offering users a more refined and targeted approach to navigating Github repositories. By addressing the repository size limitations of the base functionality and providing a solution tailored to user queries, it ensures a more efficient and user-centric experience.</p>
 
                                 
                                 <!-- Required only on API pages -->
@@ -288,20 +319,20 @@
                             
                                 <nav class="flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/features/file-search/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/features/search/search-file/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                                                <span class="block mt-1">File Search (beta)</span>
+                                                <span class="block mt-1">Search File</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/usage/basic-usage/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/features/github-issues/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                                                <span class="block mt-1">Basic Usage</span>
+                                                <span class="block mt-1">Github Issues</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -345,6 +376,6 @@
 
     <div id="docs-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Pull Requests", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Search Code", level: 3, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
