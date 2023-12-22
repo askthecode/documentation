@@ -1,18 +1,18 @@
 ---
-label: Repository Commit (beta)
+label: Commit Details (beta)
 icon: git-commit
-order: 80
+order: 100
 ---
 
 !!!warning Beta Feature
-The **Repository Commit** functionality described in this document is **currently in beta**. Please be aware that there might be some unexpected behaviors.
+The **Commit Details** functionality described in this document is **currently in beta**. Please be aware that there might be some unexpected behaviors.
 !!!
 
 ---
 
 ### Overview
 
-The Repository Commit feature allows users to delve deeper into the changes in the particular Github commit. By providing a link to the desired Github commit, users can ask ChatGPT questions related to the changes in this commit or even request to load the full file content before or after the commit for a more detailed analysis. Dive into the heart of Github commits, understand the changes, and analyze them without leaving the ChatGPT environment.
+The Commit Details feature allows users to delve deeper into the changes in the particular Github commit. By providing a link to the desired Github commit, users can ask ChatGPT questions related to the changes in this commit or even request to load the full file content before or after the commit for a more detailed analysis. Dive into the heart of Github commits, understand the changes, and analyze them without leaving the ChatGPT environment.
 
 ### Why It's Useful
 

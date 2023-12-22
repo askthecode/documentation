@@ -1,14 +1,10 @@
 ---
-label: Repository Search (beta)
+label: Search Code
 icon: codescan
-order: 60
+order: 90
 ---
 
-# Repository Search
-
-!!!warning Beta Feature
-The **Search** functionality described in this document is **currently in beta**. Please be aware that there might be some unexpected behaviors.
-!!!
+# Search Code
 
 !!!
 Only the default branch is supported for this functionality.
@@ -19,7 +15,7 @@ Only the default branch is supported for this functionality.
 
 ### Overview
 
-The Github Repository Search functionality is a feature designed to enhance interactions with Github repositories. By leveraging the Github Search, it provides more precise results when users specify particular entities such as a class, method, file etc. Unlike the base version of the plugin, which returns the entire repository structure to ChatGPT, this feature narrows down the results based on user input, ensuring more relevant and accurate responses.
+The Search Code functionality is a feature designed to enhance interactions with Github repositories. By leveraging the Github Search, it provides more precise results when users specify particular entities such as a class, method, file etc. Unlike the base version of the plugin, which returns the entire repository structure to ChatGPT, this feature narrows down the results based on user input, ensuring more relevant and accurate responses.
 
 ### Search Hits and Contextual Analysis
 
@@ -51,4 +47,4 @@ Steps in the sample:
 ![](/resources/usage/search/sample.png)
 
 ### Conclusion
-The `Repository Search` functionality enhances the capabilities of the plugin, offering users a more refined and targeted approach to navigating Github repositories. By addressing the repository size limitations of the base functionality and providing a solution tailored to user queries, it ensures a more efficient and user-centric experience.
+The `Search Code` functionality enhances the capabilities of the plugin, offering users a more refined and targeted approach to navigating Github repositories. By addressing the repository size limitations of the base functionality and providing a solution tailored to user queries, it ensures a more efficient and user-centric experience.
