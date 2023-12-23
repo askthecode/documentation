@@ -8,6 +8,10 @@ order: 80
 The functionality described in this document is **currently in beta**. Please be aware that there might be some unexpected behaviors.
 !!!
 
+!!!warning
+Currently the feature is supported only by the [AskTheCode GPT](https://chat.openai.com/g/g-3s6SJ5V7S-askthecode). The AskTheCode plugin will gain this support soon.
+!!!
+
 !!!
 Only the default branch is supported for this functionality.
 !!!
