@@ -1,13 +1,7 @@
 ---
-label: Commit Details (beta)
+label: Commit Details
 icon: git-commit
 order: 100
----
-
-!!!warning Beta Feature
-The **Commit Details** functionality described in this document is **currently in beta**. Please be aware that there might be some unexpected behaviors.
-!!!
-
 ---
 
 ### Overview

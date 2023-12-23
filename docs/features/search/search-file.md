@@ -21,7 +21,7 @@ Search File returns "search hits", meaning that when a user queries for a specif
 - **Customizable Results**: Users can specify the number of lines to extract for each search hit.
 - **Pagination of Results**: Supports pagination for extensive search results, providing partial results in the first response and allowing for subsequent requests for remaining matches.
 
-### Example
+### Sample
 
 You can find the sample usage of this feature in the [Usage > Querying Large Files](/usage/large-files) documentation
 
