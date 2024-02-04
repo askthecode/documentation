@@ -1,7 +1,7 @@
 ---
 label: Create Branch
 icon: git-branch
-order: 110
+order: 90
 ---
 
 # Create Branch

@@ -1,7 +1,7 @@
 ---
 label: Delete Branch
 icon: trash
-order: 120
+order: 10
 ---
 
 # Delete Branch
