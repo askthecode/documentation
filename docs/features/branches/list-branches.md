@@ -12,7 +12,7 @@ Currently the feature is supported only by the [AskTheCode GPT](https://chat.ope
 
 ### Overview
 
-The List Branches feature enables users to view all branches within a specific GitHub repository directly from the AskTheCode interface. This functionality provides an overview of the repository's branch structure, making it easier to navigate and manage different versions of the project.
+The **List Branches** feature enables users to view all branches within a specific GitHub repository directly from the AskTheCode GPT. This functionality provides an overview of the repository's branch structure, making it easier to navigate and manage different versions of the project.
 
 ### Why It's Useful
 - **Branch Overview**: Quickly get an overview of all branches in a repository, helping users to navigate and understand the project's structure.

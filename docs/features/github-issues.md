@@ -33,6 +33,11 @@ With the help of ChatGPT's Issue Analysis feature, the conversation is analyzed,
 ChatGPT further delves into this repository, providing the user with a comprehensive overview and guiding them through the deployment process.
 
 ### Comments Posting
+
+!!!warning
+This feature is only avalable when the [GitHub OAuth Authentication](/authentication/#authentication-methods) is used.
+!!!
+
 The Comments Posting feature allows users to interact with Github issues directly from ChatGPT. Users can request ChatGPT to compose a comment to post to the issue, either based on a previous feature analysis or from scratch. Rest assured, ChatGPT will never post a comment without confirming it with you first and asking for your approval. This feature enhances collaboration by allowing users to make their voice heard without leaving the ChatGPT environment.
 
 #### Sample

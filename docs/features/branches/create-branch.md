@@ -3,17 +3,20 @@ label: Create Branch
 icon: git-branch
 order: 90
 ---
----
-label: Create Branch
-icon: git-branch
-order: 90
----
+
+!!!warning
+Currently the feature is supported only by the [AskTheCode GPT](https://chat.openai.com/g/g-3s6SJ5V7S-askthecode).
+!!!
+
+!!!warning
+This feature is only avalable when the [GitHub OAuth Authentication](/authentication/#authentication-methods) is used.
+!!!
 
 # Create Branch
 
 #### Overview
 
-The **Create Branch** feature allows users to create a new branch within a GitHub repository directly from the AskTheCode interface. This feature streamlines the process of branching, enabling users to easily manage different development paths or features within the project.
+The **Create Branch** feature allows users to create a new branch within a GitHub repository directly from the AskTheCode GPT. This feature streamlines the process of branching, enabling users to easily manage different development paths or features within the project.
 
 #### Why It's Useful
 
@@ -33,11 +36,8 @@ The **Create Branch** feature allows users to create a new branch within a GitHu
 Please create a new branch named "feature-x" in https://github.com/username/repository from the "development" branch.
 ```
 
+![](/resources/usage/branches/create-branch.png)
+
 #### Conclusion
 
-The **Create Branch** feature is primarily designed to enhance the file editing experience by providing a safe environment for managing changes. Creating a new branch is highly recommended when working on modifications, ensuring that the main project's code remains intact and operational. This approach not only supports strategic project organization but also emphasizes the importance of using AskTheCode for efficient and safe file content management within projects.
-
-
-# Create Branch
-
-This page will document the feature to create a new branch within a repository.
+The **Create Branch** feature is primarily designed to enhance the file editing experience by providing a safe environment for managing changes. Creating a new branch is highly recommended when working on modifications, ensuring that the main project's code remains intact and operational.
