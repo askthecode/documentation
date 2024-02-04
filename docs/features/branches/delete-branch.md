@@ -3,10 +3,6 @@ label: Delete Branch
 icon: trash
 order: 10
 ---
-label: Delete Branch
-icon: trash
-order: 110
----
 
 !!!warning
 Currently, the feature is supported only by the [AskTheCode GPT](https://chat.openai.com/g/g-3s6SJ5V7S-askthecode).
@@ -38,7 +34,8 @@ The **Delete Branch** feature allows users to remove an existing branch from a G
 Please delete the "feature-x" branch in https://github.com/username/repository.
 ```
 
+![](/resources/usage/branches/delete-branch.png)
+
 ### Conclusion
 
 The **Delete Branch** feature is crucial for maintaining a clean and efficient repository. It complements the file and branch management features by allowing users to easily remove branches, ensuring that the repository remains organized and focused on current development efforts.
-
