@@ -19,7 +19,7 @@ The **Create Branch** feature allows users to create a new branch within a GitHu
 
 - **Streamlines Branch Creation**: Simplifies the process of creating a new branch, making it accessible directly from the chat interface.
 - **Supports Multiple Development Paths**: Facilitates the management of different features or development directions by allowing easy branch creation.
-- **Enhances Project Organization**: Encourages better project organization and version control practices by simplifying branch management.
+- **Facilitates Safe File Management**: Aligns well with the file content management features, highly recommended to let AskTheCode manage files in a new branch to prevent corrupting working code.
 
 #### How to Use
 
