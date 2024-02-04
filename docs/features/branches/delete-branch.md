@@ -24,7 +24,7 @@ The **Delete Branch** feature allows users to remove an existing branch from a G
 
 - **Simplifies Branch Management**: Allows for the easy removal of branches that are no longer needed, keeping the repository clean and manageable.
 - **Prevents Clutter**: Helps in avoiding the accumulation of stale branches, making it easier to navigate and focus on active development branches.
-- **Enhances Workflow**: Streamlines the development workflow by removing unnecessary branches in a straightforward manner directly from the chat interface.
+- **Completes Branch Management Features**: Along with creating and listing branches, deleting a branch completes the suite of branch management capabilities, offering full control over the repository's branches directly from the chat interface.
 
 ### How to Use
 
