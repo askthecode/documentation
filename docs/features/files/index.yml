@@ -1,3 +1,4 @@
-# Files Feature Documentation
-
-This directory contains documentation for the files feature, including file creation, update, and deletion.
+title: Files
+icon: file
+expanded: false
+order: 60
