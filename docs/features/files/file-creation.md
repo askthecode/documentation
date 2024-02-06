@@ -12,16 +12,19 @@ The File Creation feature in AskTheCode enables users to add new files to a GitH
 
 ## Why It's Useful
 
-- **Simplifies Adding New Files**: Easily create files in a repository as a direct outcome of your chat with AskTheCode, without needing to navigate GitHub's UI.
-- **Supports Various File Types**: Whether you're adding code, documentation, or other resources, the file creation feature accommodates it.
-- **Streamlines Project Contributions**: Facilitates the process of adding new content to your projects, enhancing collaboration.
+- **Facilitates Persistent GPT Interactions**: This enhancement enables users to directly save the outcomes of their interactions with AskTheCode GPT into the repository. Whether it's code snippets, configuration files, or documentation generated during a chat, this feature seamlessly integrates GPT's insights into your project's development workflow.
 
-## How to Use
+- **Enhances Collaboration Through GPT Insights**: By allowing the storage of GPT interaction results, team members can now contribute more effectively. This feature not only preserves the context of discussions but also enriches the project repository with valuable insights, making collaboration more dynamic and informed.
 
-1. **Select the Repository and Branch**: Start by specifying the GitHub repository URL where you want to create the file. Consider creating a new branch for your changes to keep the project's mainline stable. The [Create Branch](/features/files/file-creation) feature can be used for this purpose.
-2. **Provide File Details**: Indicate the path where the file should be created and its name. Include the directory structure if the file should be nested within specific folders.
-3. **Enter File Content**: Write or paste the content you wish to include in the new file, as generated from your interaction with AskTheCode GPT. This can be code, text, or any other content suitable for your project.
-4. **Commit the New File": Finalize the creation by committing the file to the repository. It's recommended to include a commit message to describe the addition.
+#### Updated How to Use Section:
+
+1. **Select the Repository and Branch**: Initiate by choosing the GitHub repository URL where the new file will be created. Consider creating a new branch for these changes to maintain the stability of the project's mainline.
+
+2. **Provide File Details**: Specify the path and name for the new file, including the directory structure if it should be nested within specific folders.
+
+3. **Incorporate GPT Interaction Results**: Input the content generated from your interaction with AskTheCode GPT. This could be code, documentation, or any other project-relevant content.
+
+4. **Finalize File Creation**: Commit the new file to the repository. Include a descriptive commit message to outline the addition's context and purpose.
 
 ## Example
 
