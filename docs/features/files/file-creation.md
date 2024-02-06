@@ -18,7 +18,7 @@ The File Creation feature in AskTheCode enables users to add new files to a GitH
 
 ## How to Use
 
-1. **Select the Repository and Branch**: Start by specifying the GitHub repository URL where you want to create the file. Consider creating a new branch for your changes to keep the project's mainline stable. The Create Branch feature can be used for this purpose (link to the feature will be added manually).
+1. **Select the Repository and Branch**: Start by specifying the GitHub repository URL where you want to create the file. Consider creating a new branch for your changes to keep the project's mainline stable. The [Create Branch](/features/files/file-creation) feature can be used for this purpose.
 2. **Provide File Details**: Indicate the path where the file should be created and its name. Include the directory structure if the file should be nested within specific folders.
 3. **Enter File Content**: Write or paste the content you wish to include in the new file, as generated from your interaction with AskTheCode GPT. This can be code, text, or any other content suitable for your project.
 4. **Commit the New File": Finalize the creation by committing the file to the repository. It's recommended to include a commit message to describe the addition.
@@ -26,14 +26,10 @@ The File Creation feature in AskTheCode enables users to add new files to a GitH
 ## Example
 
 ```prompt
-I want to add a new file named "example.txt" with the content "Hello, world!" to the main branch of https://github.com/username/repository. Here's the content:
-```
-```
-Hello, world!
+Please analyze the repository https://github.com/username/repository. 
+Create a new file named "README.md" in the feature/readme branch that will contain a brief overview of the repository.
 ```
 
 ## Conclusion
 
 The File Creation feature enhances the GitHub experience by enabling users to easily add new files to their repositories directly from the chat interface with AskTheCode, streamlining project development and collaboration.
-
-
