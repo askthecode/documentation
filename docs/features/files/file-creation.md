@@ -4,6 +4,18 @@ order: 100
 icon: diff-added
 ---
 
+!!!warning Beta Feature
+The functionality described in this document is **currently in beta**. Please be aware that there might be some unexpected behaviors.
+!!!
+
+!!!warning
+Currently the feature is supported only by the [AskTheCode GPT](https://chat.openai.com/g/g-3s6SJ5V7S-askthecode).
+!!!
+
+!!!warning
+This feature is only avalable when the [GitHub OAuth Authentication](/authentication/#authentication-methods) is used.
+!!!
+
 # File Creation
 
 ## Overview
@@ -16,15 +28,15 @@ The File Creation feature in AskTheCode enables users to add new files to a GitH
 
 - **Enhances Collaboration Through GPT Insights**: By allowing the storage of GPT interaction results, team members can now contribute more effectively. This feature not only preserves the context of discussions but also enriches the project repository with valuable insights, making collaboration more dynamic and informed.
 
-#### Updated How to Use Section:
+## How to Use:
 
 1. **Select the Repository and Branch**: Initiate by choosing the GitHub repository URL where the new file will be created. Consider creating a new branch for these changes to maintain the stability of the project's mainline.
 
 2. **Provide File Details**: Specify the path and name for the new file, including the directory structure if it should be nested within specific folders.
 
-3. **Incorporate GPT Interaction Results**: Input the content generated from your interaction with AskTheCode GPT. This could be code, documentation, or any other project-relevant content.
+3. **Incorporate GPT Interaction Results**: Ask AskTheCode GPT to generate a required content and store it to the file. This could be code, documentation, or any other project-relevant content.
 
-4. **Finalize File Creation**: Commit the new file to the repository. Include a descriptive commit message to outline the addition's context and purpose.
+4. **Finalize File Creation**: Optionally you can explicitly specify the commit message to eb used. If not, AskTheCode GPT will generate appropriate commit message on its own.
 
 ## Example
 
