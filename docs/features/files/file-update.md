@@ -6,12 +6,15 @@ icon: diff-modified
 
 !!!warning Beta Feature
 The functionality described in this document is **currently in beta**. Please be aware that there might be some unexpected behaviors.
+!!!
 
 !!!warning
-Currently, the feature is supported only by the [AskTheCode GPT](https://chat.openai.com/g/g-3s6SJ5V7S-askthecode).
+Currently the feature is supported only by the [AskTheCode GPT](https://chat.openai.com/g/g-3s6SJ5V7S-askthecode).
+!!!
 
 !!!warning
-This feature is only available when the [GitHub OAuth Authentication](/authentication/#authentication-methods) is used.
+This feature is only avalable when the [GitHub OAuth Authentication](/authentication/#authentication-methods) is used.
+!!!
 
 # File Update
 
@@ -22,7 +25,9 @@ The File Update feature in AskTheCode enables users to modify existing files in 
 ### Why It's Useful
 
 - **Streamlines Content Management**: Facilitates the quick and efficient updating of files, enabling project repositories to stay current with the latest developments and corrections.
+
 - **Enhances Collaborative Workflows**: Allows team members to easily update files based on collaborative decisions or to incorporate new insights, improving the overall project quality.
+
 - **Supports Incremental Improvements**: Enables the iterative improvement of project files, allowing for the gradual enhancement of content, code, and documentation.
 
 ### How to Use
