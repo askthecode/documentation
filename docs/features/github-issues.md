@@ -9,17 +9,24 @@ order: 50
 ---
 
 ### Overview
+
 The Github Issues functionality is a powerful tool that not only allows users to delve deeper into the conversations and discussions surrounding a particular Github issue but also empowers them to post comments directly. By providing a link to the desired Github issue, users can ask ChatGPT questions related to the conversation under this issue or even request to post a comment. Dive into the heart of Github discussions, interact seamlessly, and make your voice heard without leaving the ChatGPT environment.
 
 ### Why It's Useful
+
 - **Deep Dive into Discussions**: Understand the context and nuances of discussions without having to manually sift through long conversation threads.
+
 - **Quick Insights**: Get quick answers to specific questions about an issue's conversation, saving time and effort.
+
 - **Enhanced Collaboration**: By understanding the core of discussions, developers can make more informed decisions and contribute more effectively.
+
 - **Direct Interaction**: With the comments posting capability, users can actively participate in ongoing discussions, provide feedback, or ask further questions directly from ChatGPT. This seamless integration ensures that users can make their voice heard without the need to switch between platforms.
+
 - **Controlled Engagement**: ChatGPT ensures that no comment is posted without the user's explicit approval, providing a safe and controlled environment for interaction.
 
 
 ### Issue Analysis
+
 The Issue Analysis feature allows users to gain insights into the discussions surrounding a Github issue. By providing ChatGPT with the link to the desired Github issue, the tool will analyze the conversation and provide relevant answers or insights. For long issues, not all comments may be retrieved at once due to limitations. ChatGPT will notify you in such cases and ask if you want to analyze the next part of the comments. For shorter issues, the entire conversation can be retrieved in a single request. This feature is particularly useful for understanding the context and nuances of discussions without having to manually sift through long conversation threads.
 
 #### Sample
@@ -51,4 +58,5 @@ ChatGPT then refines the comment based on the user's feedback. Once the user is 
 ![](/resources/usage/github-issues/comment-posting.png)
 
 ### Conclusion
+
 The Github Issues functionality is a game-changer for both repository maintainers and end-users. Maintainers can now swiftly respond to created issues via ChatGPT, ensuring a more dynamic and interactive community. On the other hand,

@@ -17,8 +17,11 @@ Search File returns "search hits", meaning that when a user queries for a specif
 ### Why It's Useful
 
 - **Targeted Searches**: Allows users to search for specific classes, functions, or properties within a file.
+
 - **Large File Handling**: Ideal for interacting with large files that are too extensive for the context window of the GPT model.
+
 - **Customizable Results**: Users can specify the number of lines to extract for each search hit.
+
 - **Pagination of Results**: Supports pagination for extensive search results, providing partial results in the first response and allowing for subsequent requests for remaining matches.
 
 ### Sample

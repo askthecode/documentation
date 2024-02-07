@@ -15,8 +15,11 @@ The Repository Content feature is designed to empower ChatGPT with the ability t
 ### Why It's Useful
 
 - **Comprehensive Analysis**: By accessing the actual content of repository files, ChatGPT can provide detailed insights, explanations, and code suggestions.
+
 - **Optimized File Retrieval**: AskTheCode employs multiple strategies to reduce file sizes and ensure efficient content retrieval, especially for large files.
+
 - **Private Repository Access**: this feature supports accessing private repositories if the user is [authenticated with their GitHub account](/authentication).
+
 - **Paging Support**: For extensive files, AskTheCode enforces content paging to ensure that ChatGPT can analyze the file without hallucinations.
 
 ### Constraints

@@ -17,11 +17,15 @@ Currently the feature is supported only by the [AskTheCode GPT](https://chat.ope
 # Search Issues
 
 ### Overview
+
 The Search Issues functionality in the AskTheCode plugin empowers users to query Github repository issues using natural language. This feature enhances the user's ability to find relevant issues quickly and efficiently.
 
 ### Why It's Useful
+
 - **Natural Language Queries**: Enables users to search for issues using conversational language, making the process intuitive and user-friendly.
+
 - **Focused Results**: Retrieves issues that are closely related to the user's query, saving time in sifting through unrelated issues.
+
 - **Issue Details**: Delve deeper into the issue thread using the [Github Issues](/features/github-issues) feature.
 
 ### Sample

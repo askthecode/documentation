@@ -22,7 +22,7 @@ In this sample, we dive into understanding how the [Refit](https://github.com/re
 
 ---
 
-#### Langchain and ChatGPT Plugins Integration
+### Langchain and ChatGPT Plugins Integration
 
 Lets assume we are targeting to find out about integrating ChatGPT plugin into the Langchain pipeline. For that we can provide the link to the [docs directory in the Langchain Github repository](https://github.com/langchain-ai/langchain/tree/master/docs) and ask ChatGPT to look for the details of integration. Since the repository of the Langchain is quite huge, the prompt should be pretty specific, something like:
 
@@ -39,7 +39,7 @@ This will give us a sample of how to integrate Langchain with the GPT plugin:
 
 ---
 
-#### Documentation Generation
+### Documentation Generation
 
 This conversation demonstrates the use of AskTheCode's file creation and update features within a GitHub repository. It showcases a step-by-step process for analyzing a repository's structure, creating new directories and files, and updating existing files with specific annotations and documentation content. The interaction shows how users can efficiently manage GitHub files, including writing and applying documentation updates directly through conversational commands.
 

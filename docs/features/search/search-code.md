@@ -27,8 +27,11 @@ This capability is particularly useful in scenarios where users want to understa
 ### Why It's Useful
 
 - **Enhanced Precision**: By specifying entities like files, classes, or methods, users can get directly relevant results, bypassing unrelated content.
+
 - **Overcome Base Limitations**: The Search feature addresses the [Repository Structure Limit constraint](/features/repository-content/#constraints) of the base functionality, offering a more refined search experience.
+
 - **Quick Access**: Users can swiftly navigate to the exact sections of a repository they're interested in.
+
 - **Optimized for Large Repositories**: Especially useful for extensive repositories where the base functionality might be overwhelmed.
 
 ### Samples 

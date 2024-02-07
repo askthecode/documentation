@@ -11,9 +11,13 @@ The Commit Details feature allows users to delve deeper into the changes in the 
 ### Why It's Useful
 
 - **Detailed Analysis**: Understand the changes in a commit without having to manually sift through the code.
+
 - **Quick Insights**: Get quick answers to specific questions about a commit's changes, saving time and effort.
+
 - **Enhanced Understanding**: By understanding the changes in a commit, developers can make more informed decisions and contribute more effectively.
+
 - **Iterative Analysis**: For large commits, paging is implemented, allowing ChatGPT to analyze changes iteratively.
+
 - **Full File Content Loading**: Users can request ChatGPT to load the full file content before or after the commit for a more in-depth analysis.
 
 ### Sample

@@ -23,9 +23,13 @@ The File Commit History feature allows users to explore the commit history of a 
 ### Why It's Useful
 
 - **Historical Insight**: Gain a comprehensive understanding of how a file has evolved over time, including changes made in each commit.
+
 - **Blame Analysis**: Determine who made specific changes to the file and when, facilitating accountability and collaboration.
+
 - **Contextual Understanding**: Understand the reasons behind changes by linking them to specific commits and their messages.
+
 - **Iterative Exploration**: For files with extensive commit histories, users can explore the history iteratively, focusing on specific periods or changes of interest.
+
 - **Commit Details**: Delve deeper into the commit details using the [Commit Details](/features/commits/commit-details) feature.
 
 ### Sample
