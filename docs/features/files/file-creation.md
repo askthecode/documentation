@@ -32,6 +32,10 @@ The File Creation feature in AskTheCode enables users to add new files to a GitH
 
 1. **Select the Repository and Branch**: Initiate by choosing the GitHub repository URL where the new file will be created. Consider creating a new branch for these changes to maintain the stability of the project's mainline.
 
+!!!info Caution
+Creating files directly in the default branch is not prohibited but can is highly discouraged. For a safer development process, it's **highly recommended** to perform changes in a new branch. Creating a new branch for your edits isolates changes, simplifies review, and reduces the risk of unintentionally affecting the project's stability. Please, consider using a dedicated branch for any updates or modifications.
+!!!
+
 2. **Provide File Details**: Specify the path and name for the new file, including the directory structure if it should be nested within specific folders.
 
 3. **Incorporate GPT Interaction Results**: Ask AskTheCode GPT to generate a required content and store it to the file. This could be code, documentation, or any other project-relevant content.
@@ -40,10 +44,29 @@ The File Creation feature in AskTheCode enables users to add new files to a GitH
 
 ### Example
 
+In this example, the process of creating an initial HTML markup for the 2048 game within a GitHub repository is outlined. 
+
+The operation consists of two main steps:
+
+1. **Creating a New Branch**: A new branch is created specifically for this development activity to ensure that the main codebase remains unaffected until the new features are ready to be merged.
+
+2. **Creating the Initial HTML File**: With the new branch set up, the AskTheCode GPT is asked to generate the initial HTML markup file for the 2048 game.
+
+3. **Storing it to the repository**: When the content is generated, it's saved to the newly created branch in the repository.
+
+The prompt used for this operation is as follows:
+
 ```prompt
-Please analyze the repository https://github.com/username/repository. 
-Create a new file named "README.md" in the feature/readme branch that will contain a brief overview of the repository.
+https://github.com/askthecode/test-repo
+
+Please do the following:
+
+1. Create new branch 2048-game
+2. In this newly created branch create html file with simple board for the 2048 game
+3. Save this html to the "2048-game" directory 
 ```
+
+The full sample can be found by this [link](https://chat.openai.com/share/e90ff849-6c44-4646-b53d-44d0bbd664dd).
 
 ### Conclusion
 

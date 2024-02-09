@@ -34,6 +34,10 @@ The File Deletion feature in AskTheCode allows users to remove files from a GitH
 
 1. **Select the Repository and Branch**: Begin by specifying the GitHub repository URL where the file will be deleted. Ensure you're working on the correct branch to avoid unintended deletions. 
 
+!!!info Caution
+Deleting files directly in the default branch is not prohibited but can is highly discouraged. For a safer development process, it's **highly recommended** to perform changes in a new branch. Creating a new branch for your edits isolates changes, simplifies review, and reduces the risk of unintentionally affecting the project's stability. Please, consider using a dedicated branch for any updates or modifications.
+!!!
+
 2. **Identify the File to Delete**: Provide the path and name of the file you wish to remove. Accuracy is crucial to prevent the deletion of the wrong file.
 
 3. **Confirm File Deletion**: Before proceeding, AskTheCode GPT will confirm the file deletion request to ensure it is intentional and correct. This step is crucial for avoiding accidental loss of important files.
