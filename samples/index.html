@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.756688362463">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.760752585446">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -36,11 +36,11 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="/resources/logo.jpg" rel="icon">
-    <link href="/resources/css/retype.css?v=3.5.0.756688362463" rel="stylesheet">
+    <link href="/resources/css/retype.css?v=3.5.0.760752585446" rel="stylesheet">
 
-    <script data-cfasync="false" src="/resources/js/config.js?v=3.5.0.756688362463" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/resources/js/config.js?v=3.5.0.760752585446" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.5.0.756688362463" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/resources/js/lunr.js?v=3.5.0.760752585446" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -234,16 +234,6 @@
     </h1>
 </doc-anchor-target>
 <p>Welcome to the Samples page of AskTheCode! Here, you&#x27;ll find various examples showcasing the interaction of the ChatGPT plugin with different GitHub repositories. These samples will help you understand how AskTheCode can assist you in answering questions related to your repositories.</p>
-<hr>
-<doc-anchor-target id="refit-librarys-http-proxy-client-generation">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#refit-librarys-http-proxy-client-generation">#</doc-anchor-trigger>
-        <span>Refit Library&#x27;s HTTP Proxy Client Generation</span>
-    </h3>
-</doc-anchor-target>
-<p>In this sample, we dive into understanding how the <a href="https://github.com/reactiveui/refit/">Refit</a> library generates the HTTP proxy client internally.</p>
-<p><a href="https://chat.openai.com/share/9cb9ff0a-078f-4011-9c15-d4d21f6e5c0e">View Sample</a></p>
-<hr>
 <div class="flex mb-6">
     <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-300"></div>
     <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
@@ -262,11 +252,21 @@
         </div>
     </div>
 </div>
+<hr>
+<doc-anchor-target id="refit-librarys-http-proxy-client-generation">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#refit-librarys-http-proxy-client-generation">#</doc-anchor-trigger>
+        <span>Refit Library&#x27;s HTTP Proxy Client Generation</span>
+    </h3>
+</doc-anchor-target>
+<p>In this sample, we dive into understanding how the <a href="https://github.com/reactiveui/refit/">Refit</a> library generates the HTTP proxy client internally.</p>
+<p><a href="https://chat.openai.com/share/9cb9ff0a-078f-4011-9c15-d4d21f6e5c0e">View Sample</a></p>
+<hr>
 <doc-anchor-target id="langchain-and-chatgpt-plugins-integration">
-    <h4>
+    <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#langchain-and-chatgpt-plugins-integration">#</doc-anchor-trigger>
         <span>Langchain and ChatGPT Plugins Integration</span>
-    </h4>
+    </h3>
 </doc-anchor-target>
 <p>Lets assume we are targeting to find out about integrating ChatGPT plugin into the Langchain pipeline. For that we can provide the link to the <a href="https://github.com/langchain-ai/langchain/tree/master/docs">docs directory in the Langchain Github repository</a> and ask ChatGPT to look for the details of integration. Since the repository of the Langchain is quite huge, the prompt should be pretty specific, something like:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -282,6 +282,15 @@ Please give me an example of using this tool</code></pre>
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
+<hr>
+<doc-anchor-target id="documentation-generation">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#documentation-generation">#</doc-anchor-trigger>
+        <span>Documentation Generation</span>
+    </h3>
+</doc-anchor-target>
+<p>This conversation demonstrates the use of AskTheCode&#x27;s file creation and update features within a GitHub repository. It showcases a step-by-step process for analyzing a repository&#x27;s structure, creating new directories and files, and updating existing files with specific annotations and documentation content. The interaction shows how users can efficiently manage GitHub files, including writing and applying documentation updates directly through conversational commands.</p>
+<p><a href="https://chat.openai.com/share/8f02d663-4d3d-4ac4-8319-2316974e1e1b">View Sample</a></p>
 
                                 
                                 <!-- Required only on API pages -->
