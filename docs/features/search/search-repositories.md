@@ -23,7 +23,9 @@ The Search Repositories feature in the AskTheCode plugin enables users to levera
 ### Why It's Useful
 
 - **Ease of Use**: Searching for repositories through natural language queries simplifies the discovery process.
+
 - **Language-Specific Searches**: Focus on repositories in a specific programming language, making it easier to find relevant projects or examples.
+
 - **Time-Saving**: Quickly find repositories without manually browsing through GitHub.
 
 ### Sample

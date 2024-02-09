@@ -29,7 +29,9 @@ The Search Commits functionality is a powerful tool for navigating and understan
 ### Why It's Useful
 
 - **Natural Language Queries**: Interact with commit history using intuitive natural language.
+
 - **Detailed Commit Analysis**: Obtain in-depth information about what each commit entails.
+
 - **Commit Details**: Delve deeper into the commit details using the [Commit Details](/features/commits/commit-details) feature.
 
 ### Sample
