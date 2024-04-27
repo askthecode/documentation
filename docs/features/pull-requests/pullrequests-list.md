@@ -16,11 +16,11 @@ The `List Pull Requests` feature allows users to view all open pull requests wit
 
 - **Pull Request Overview**: Quickly obtain a list of all open pull requests, offering insight into ongoing changes and code reviews.
 - **Facilitates Code Review**: Streamlines the process of identifying pull requests that need attention, simplifying the workflow for contributors and reviewers.
-- **Pull Request Analysis**: Provides a great entrypoint for further `Pull Requests Overview`, `Pull Requests Comments` and `Pull Requests Changes` features.
+- **Pull Request Analysis**: Provides a great entrypoint for further [Pull Requests Overview](/features/pull-requests/pullrequest-overview.md), [Pull Requests Comments](/features/pull-requests/pullrequest-comments.md) and [Pull Requests Changes](/features/pull-requests/pullrequest-changes.md) features.
 
 ### How to Use
 
-1. **Provide the Repository URL**: Begin by providing the GitHub repository URL to the AskTheCode plugin.
+1. **Provide the Repository URL**: Begin by providing the GitHub repository URL to the AskTheCode GPT.
 2. **Request Pull Request List**: Request a list of all open pull requests in the repository using a simple command like "Please list all pull requests in [repository URL]."
 
 ### Sample

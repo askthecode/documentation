@@ -4,30 +4,32 @@ icon: eye
 order: 90
 ---
 
+[!embed](/resources/usage/pull-requests/overview.mp4)
 
 # Pull Request Overview
 
 ### Overview
 
-The **Pull Request Overview** feature provides a detailed view of the pull requests in a GitHub repository. This allows users to see comprehensive information about each pull request, including status, contributors, and linked issues.
+The `Pull Request Overview` feature provides a detailed view of the individual pull request in a GitHub repository. This allows users to see comprehensive information about each pull request, including status, contributors, and linked issues.
 
 ### Why It's Useful
 
-- **Detailed Information**: Offers a detailed view of pull requests, including essential metrics such as additions, deletions, and file changes.
-- **Easy Tracking**: Enhances the ability to track changes and understand the impact of each pull request.
+- **Detailed Information**: Offers a detailed view of pull requests, including the conversation, file changes, essential metrics such as additions, deletions etc.
 - **Collaboration Facilitation**: Aids in reviewing contributions, making collaborative decisions easier.
+- **Simplifies Small PRs**: Works best for small PRs, that can be processed in one go. For PRs with large conversations or with lots of changes see [Pull Requests Comments](/features/pull-requests/pullrequest-comments.md) and [Pull Requests Changes](/features/pull-requests/pullrequest-changes.md) features.
 
 ### How to Use
 
-1. **Provide the Repository URL**: Start by providing the GitHub repository URL to the AskTheCode plugin.
-2. **Specify the Pull Request**: Indicate the pull request number or title you wish to overview.
+1. **Provide the Pull Request URL**: Start by providing the GitHub pull request URL to the AskTheCode GPT.
+2. **Request Pull Request Details**: Request pull request overview or the specific details you are interested in.
 
 ### Sample
 
 ```prompt
-Please provide an overview of pull request #42 in https://github.com/username/repository.
+https://github.com/huggingface/pytorch-image-models/pull/2048
+Please give me an overview of the pull request, describe each change and summarize the conversation
 ```
 
 ### Conclusion
 
-Utilizing the **Pull Request Overview** feature enhances project management by providing critical insights into pull requests, aiding in effective decision-making and collaboration.
+**Pull Request Overview** feature sufficiently simplifies interaction with GitHub pull requests. It helps to grasp the idea of the pull request details and introduced changes.
