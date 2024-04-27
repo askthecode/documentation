@@ -3,11 +3,12 @@ label: Pull Requests Comments
 icon: comment-discussion
 order: 80
 ---
+
 # Pull Request Comments
 
 ### Overview
 
-The Pull Request Comments feature focuses on analyzing and managing conversations in pull requests, particularly useful for PRs with extensive discussions that exceed the capability of the standard Pull Request Overview feature due to response size limitations.
+The `Pull Request Comments` feature focuses on analyzing and managing conversations in pull requests, particularly useful for PRs with extensive discussions that exceed the capability of the standard [Pull Request Overview](/features/pull-requests/pullrequest-overview.md) feature due to response size limitations.
 
 ### Why It's Useful
 
@@ -23,11 +24,10 @@ The Pull Request Comments feature focuses on analyzing and managing conversation
 ### Sample
 
 ```prompt
-https://github.com/askthecode/documentation/pull/1234
-Please analyze the comments for this pull request.
+https://github.com/dotnet/efcore/pull/10264
+Please iterate over the conversation and provide me a summary of each comment and the discussion under it.
 ```
 
 ### Conclusion
 
-The Pull Request Comments feature is designed to handle large-scale conversations in pull requests efficiently, making it easier to manage and participate in significant discussions.
-
+The `Pull Request Comments` feature is designed to handle extensive conversations in pull requests efficiently, making it easier to analyze and summarize those discussions.
