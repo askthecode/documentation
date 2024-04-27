@@ -9,10 +9,6 @@ The functionality described in this document is **currently in beta**. Please be
 !!!
 
 !!!warning
-Currently the feature is supported only by the [AskTheCode GPT](https://chat.openai.com/g/g-3s6SJ5V7S-askthecode).
-!!!
-
-!!!warning
 This feature is only avalable when the [GitHub OAuth Authentication](/authentication/#authentication-methods) is used.
 !!!
 
