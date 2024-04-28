@@ -5,10 +5,6 @@ order: 10
 ---
 
 !!!warning
-Currently, the feature is supported only by the [AskTheCode GPT](https://chat.openai.com/g/g-3s6SJ5V7S-askthecode).
-!!!
-
-!!!warning
 This feature is only available when the [GitHub OAuth Authentication](/authentication/#authentication-methods) is used.
 !!!
 
