@@ -1,5 +1,5 @@
 ---
-label: Search Commits (beta)
+label: Search Commits
 icon: log
 order: 80
 ---

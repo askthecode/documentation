@@ -6,8 +6,6 @@ order: 100
 
 [!embed](/resources/usage/pull-requests/list-all.mp4)
 
-## List Pull Requests
-
 ### Overview
 
 The `List Pull Requests` feature allows users to view all open pull requests within a specific GitHub repository directly from the AskTheCode GPT. This functionality provides an overview of the repository's pull request activity, aiding in code review processes and project management.
@@ -33,3 +31,4 @@ Respond with the pull request name and URL
 ### Conclusion
 
 The `List Pull Requests` feature is an essential tool for effective GitHub repository management, providing a straightforward way to view and engage with open pull requests. It enhances user interaction with the project by facilitating quick access to and discussions about pending changes.
+

@@ -6,8 +6,6 @@ order: 70
 
 [!embed](/resources/usage/pull-requests/changes.mp4)
 
-## Pull Request Changes
-
 ### Overview
 
 The `Pull Request Changes` feature focuses on analyzing the changes made in pull requests, specifically useful for PRs with numerous changed files. This feature is particularly helpful when the pull request overview cannot display all changes due to the 100k characters limitation in GPT actions responses.

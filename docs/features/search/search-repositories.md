@@ -1,5 +1,5 @@
 ---
-label: Search Repositories (beta)
+label: Search Repositories
 icon: repo
 order: 70
 ---
