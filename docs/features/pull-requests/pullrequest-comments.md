@@ -4,8 +4,6 @@ icon: comment-discussion
 order: 80
 ---
 
-# Pull Request Comments
-
 ### Overview
 
 The `Pull Request Comments` feature focuses on analyzing and managing conversations in pull requests, particularly useful for PRs with extensive discussions that exceed the capability of the standard [Pull Request Overview](/features/pull-requests/pullrequest-overview.md) feature due to response size limitations.
@@ -31,3 +29,4 @@ Please iterate over the conversation and provide me a summary of each comment an
 ### Conclusion
 
 The `Pull Request Comments` feature is designed to handle extensive conversations in pull requests efficiently, making it easier to analyze and summarize those discussions.
+

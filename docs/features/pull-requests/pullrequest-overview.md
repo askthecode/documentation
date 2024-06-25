@@ -6,8 +6,6 @@ order: 90
 
 [!embed](/resources/usage/pull-requests/overview.mp4)
 
-## Pull Request Overview
-
 ### Overview
 
 The `Pull Request Overview` feature provides a detailed view of the individual pull request in a GitHub repository. This allows users to see comprehensive information about each pull request, including status, contributors, and linked issues.

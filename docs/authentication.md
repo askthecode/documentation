@@ -10,17 +10,19 @@ To ensure a seamless experience with the AskTheCode plugin, users are required t
 
 ### Authentication Methods
 
-1. **Passwordless Login via Email**  
+1. **Passwordless Login via Email**
 
 This method allows users to quickly start exploring the features of the AskTheCode plugin without the need for a password. It's a hassle-free way to get started, especially for those who are new to the plugin and want to explore its capabilities. However, this method is recommended for exploration purposes only.
 
-2. **GitHub OAuth Authentication**  
+2. **GitHub OAuth Authentication**
 
 Authenticating with your GitHub account unlocks additional features, such as the ability to ask questions about private repositories. For an enhanced experience and to take full advantage of the plugin's capabilities, we recommend using the GitHub OAuth method.
 
 ### Managing Your Account and Subscription
 
-To manage your account, subscription plan, and view your quota:
+[!embed](/resources/authentication/manage-subscription.mp4)
+
+To manage your account, subscription plan, view your quota or cancel subscription:
 
 1. Visit the [Account Management Page](https://c7d59216ee8ec59bda5e51ffc17a994d.auth.portal-pluginlab.ai/pricing).
 2. Here, you can view your current quota and available subscription plans.
@@ -45,7 +47,6 @@ To resolve this issue:
 1. Change the browser language to English.
 2. If the browser translation feature is turned on and set to a language other than English, change it to English as well.
 
-
 #### Unable to Retrieve Data from Private Repository
 
 If you encounter an error when trying to retrieve data from your private repository, the issue might be related to the following error message:
@@ -54,15 +55,14 @@ If you encounter an error when trying to retrieve data from your private reposit
 
 To resolve this issue, ensure that you have approved the AskTheCode OAuth app within your organization. To see how to approve the app, consult the [Approving OAuth apps for your organization](https://docs.github.com/en/organizations/managing-oauth-access-to-your-organizations-data/approving-oauth-apps-for-your-organization) documentation.
 
-
 #### Subscription Quota Not Applied
 
 If you encounter an error when after purchasing a subscription, the new quota may not immediately reflect in your account, leaving you unable to access the increased limits, you should follow the next steps:
 
 1. **Log Out and Log Back In:** The first step is to ensure that your account recognizes the new subscription status. Please log out of your account and then log back in. This action refreshes your session and applies any pending updates to your account.
 
-    1. To log out of your account, navigate to the account settings and select the "Log Out" option. To log out of the account, pelase follow the steps from the video: [!embed](/resources/authentication/sign-out.mp4)
-    2. Log back in by entering the email or GitHub account details associated with the subscription purchase.
+   1. To log out of your account, navigate to the account settings and select the "Log Out" option. To log out of the account, pelase follow the steps from the video: [!embed](/resources/authentication/sign-out.mp4)
+   2. Log back in by entering the email or GitHub account details associated with the subscription purchase.
 
 2. **Use the Correct Account:** It's crucial to log back in using the same account that was used to purchase the subscription. Logging in with a different account will not reflect the subscription benefits.
 

@@ -1,5 +1,5 @@
 ---
-label: Search Issues (beta)
+label: Search Issues
 icon: issue-tracks
 order: 60
 ---
